@@ -50,7 +50,7 @@ jobs:
           rsync -az --delete \
             --exclude '.git/' \
             --exclude 'carrd-export-original/' \
-            --exclude 'assets/' \
+            --exclude '/assets/' \
             ./ "$SSH_USER@$SSH_HOST:$remote_stage/"
           ssh "$SSH_USER@$SSH_HOST" "bash '$remote_stage/ops/deploy-release.sh' '$remote_stage' '$release_id'"
 
