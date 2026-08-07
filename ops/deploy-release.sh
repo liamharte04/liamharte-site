@@ -40,7 +40,16 @@ if ! sudo /usr/bin/systemctl restart liamharte-contact.service; then
   exit 70
 fi
 
-if ! curl --fail --silent --show-error http://127.0.0.1:3217/health >/dev/null; then
+healthy=false
+for _attempt in {1..20}; do
+  if curl --fail --silent http://127.0.0.1:3217/health >/dev/null; then
+    healthy=true
+    break
+  fi
+  sleep 0.25
+done
+
+if [[ "$healthy" != "true" ]]; then
   if [[ -n "$previous_release" ]]; then
     ln -sfn "$previous_release" "$current_link"
     sudo /usr/bin/systemctl restart liamharte-contact.service || true
