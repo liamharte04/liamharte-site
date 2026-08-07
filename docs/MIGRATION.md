@@ -78,6 +78,10 @@ The migration also addresses the identity-search audit in
 | Live metadata, links and schema recheck | Not started |
 | Search Console sitemap and indexing request | External follow-up |
 
+The workflow uses the Node 24-based v5 releases of the official checkout and
+Node setup actions. This avoids the Node 20 runner deprecation warning observed
+on the first successful deployment.
+
 ## Cutover sequence
 
 1. Pass `npm test` and local visual review.
