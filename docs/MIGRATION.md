@@ -1,7 +1,7 @@
 # liamharte.com Carrd migration record
 
 **Started:** 7 August 2026  
-**Current state:** Replacement deployed and origin-verified; production remains on Carrd pending IONOS DNS cutover and HTTPS.  
+**Current state:** Live on the owned VPS with DNS, HTTPS and production verification complete.
 **Canonical production URL:** <https://liamharte.com/>
 
 ## Objective
@@ -74,13 +74,18 @@ The migration also addresses the identity-search audit in
 | Nginx origin configuration | Complete |
 | HTTP origin test with local host resolution | Complete |
 | GitHub Actions deployment | Complete: run `31175859724` passed |
-| HTTPS certificate and DNS cutover | Not started |
-| Live metadata, links and schema recheck | Not started |
+| HTTPS certificate and DNS cutover | Complete |
+| Live metadata, links and schema recheck | Complete |
 | Search Console sitemap and indexing request | External follow-up |
 
 The workflow uses the Node 24-based v5 releases of the official checkout and
 Node setup actions. This avoids the Node 20 runner deprecation warning observed
 on the first successful deployment.
+
+The live visual review exposed an initially over-broad rsync exclusion that
+omitted `site/assets/`. The exclusion is now anchored to the unused repository
+root folder, the assets were redeployed, and the workflow verifies the live
+stylesheet as well as HTML pages so the failure cannot pass unnoticed again.
 
 ## Cutover sequence
 
@@ -99,12 +104,18 @@ on the first successful deployment.
 9. Keep the Carrd project published and recoverable during the initial rollback
    window. Do not cancel the Carrd subscription as part of this migration.
 
-## Rollback
+## Production and rollback
 
-Before DNS cutover, no rollback is needed because Carrd remains public.
+IONOS authoritative DNS and the public resolver now return the production apex
+`A` record `168.231.78.80` with a 60-second TTL. `www` remains a CNAME to the
+apex. The other email, DKIM, DMARC and subdomain records were not changed.
 
-After cutover, immediate rollback is to restore the previous Carrd DNS target.
-The pre-cutover records observed on 7 August 2026 are:
+The Let's Encrypt certificate covers `liamharte.com` and `www.liamharte.com`,
+expires on 5 November 2026 and has a successful automatic-renewal dry run. HTTP
+and HTTPS `www` requests redirect to canonical `https://liamharte.com/`.
+
+Immediate hosting rollback is to restore the previous Carrd apex DNS target.
+The pre-cutover records observed on 7 August 2026 were:
 
 - Apex `A`: `liamharte.com` to `172.66.0.70`, TTL 60 seconds.
 - `www` `CNAME`: `www.liamharte.com` to `liamharte.com`, TTL 60 seconds.

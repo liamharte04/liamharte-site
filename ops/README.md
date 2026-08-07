@@ -40,10 +40,11 @@ Do not send a test contact message without treating it as a real email action.
 
 ## HTTPS
 
-The checked-in configuration is HTTP-only so it can be validated before DNS
-cutover. After the DNS record points to the VPS, use Certbot to issue a
-certificate for both apex and `www`, review the generated redirects and headers,
-and retest Nginx before reload.
+The checked-in Nginx configuration is the production HTTPS configuration. It
+uses the Let's Encrypt certificate at `/etc/letsencrypt/live/liamharte.com/`,
+binds explicitly to the VPS public address, redirects HTTP and `www` to the
+canonical HTTPS apex, and enables HSTS. Certificate renewal is managed by the
+existing Certbot timer and its post-cutover dry run passed.
 
 ## GitHub Actions secrets
 

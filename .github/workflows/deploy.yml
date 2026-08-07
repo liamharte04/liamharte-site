@@ -54,10 +54,17 @@ jobs:
             ./ "$SSH_USER@$SSH_HOST:$remote_stage/"
           ssh "$SSH_USER@$SSH_HOST" "bash '$remote_stage/ops/deploy-release.sh' '$remote_stage' '$release_id'"
 
-      - name: Verify origin over HTTP
+      - name: Verify production origin
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
         run: |
-          curl --fail --silent --show-error \
+          curl --fail --silent --show-error --location \
             --resolve "liamharte.com:80:${SSH_HOST}" \
+            --resolve "liamharte.com:443:${SSH_HOST}" \
             http://liamharte.com/ >/dev/null
+          curl --fail --silent --show-error \
+            --resolve "liamharte.com:443:${SSH_HOST}" \
+            https://liamharte.com/about/ >/dev/null
+          curl --fail --silent --show-error \
+            --resolve "liamharte.com:443:${SSH_HOST}" \
+            https://liamharte.com/assets/css/styles.css >/dev/null

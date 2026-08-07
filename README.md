@@ -5,9 +5,10 @@ personal site.
 
 ## Status
 
-The replacement site is deployed to the VPS and its origin checks and automated
-GitHub deployment have passed. Production remains on Carrd until the IONOS DNS
-record is deliberately cut over and HTTPS is verified.
+The owned site is live on the VPS. IONOS DNS points the apex domain to
+`168.231.78.80`, HTTPS is enforced for the apex and `www`, and automated GitHub
+deployments verify the homepage, biography page and stylesheet. The preserved
+Carrd project and old DNS target remain available for rollback.
 
 ## Architecture
 
@@ -30,6 +31,5 @@ Then open <http://localhost:4173/>.
 
 ## Deployment state
 
-Deployment, DNS, certificate and rollback status are recorded in
-[`docs/MIGRATION.md`](docs/MIGRATION.md). Do not describe the owned version as
-live until the production checks in that record have passed.
+Deployment, DNS, certificate, verification and rollback status are recorded in
+[`docs/MIGRATION.md`](docs/MIGRATION.md).
