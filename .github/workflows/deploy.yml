@@ -46,13 +46,20 @@ jobs:
         run: |
           release_id="${GITHUB_SHA}"
           remote_stage="/var/www/liamharte-site/incoming/${release_id}"
-          ssh "$SSH_USER@$SSH_HOST" "mkdir -p '$remote_stage'"
+          ssh_options=(
+            -o ConnectTimeout=20
+            -o ConnectionAttempts=3
+            -o ServerAliveInterval=15
+            -o ServerAliveCountMax=3
+          )
+          ssh "${ssh_options[@]}" "$SSH_USER@$SSH_HOST" "mkdir -p '$remote_stage'"
           rsync -az --delete \
+            -e "ssh -o ConnectTimeout=20 -o ConnectionAttempts=3 -o ServerAliveInterval=15 -o ServerAliveCountMax=3" \
             --exclude '.git/' \
             --exclude 'carrd-export-original/' \
             --exclude '/assets/' \
             ./ "$SSH_USER@$SSH_HOST:$remote_stage/"
-          ssh "$SSH_USER@$SSH_HOST" "bash '$remote_stage/ops/deploy-release.sh' '$remote_stage' '$release_id'"
+          ssh "${ssh_options[@]}" "$SSH_USER@$SSH_HOST" "bash '$remote_stage/ops/deploy-release.sh' '$remote_stage' '$release_id'"
 
       - name: Verify production origin
         env:

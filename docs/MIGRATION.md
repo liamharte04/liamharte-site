@@ -89,6 +89,12 @@ omitted `site/assets/`. The exclusion is now anchored to the unused repository
 root folder, the assets were redeployed, and the workflow verifies the live
 stylesheet as well as HTML pages so the failure cannot pass unnoticed again.
 
+An identity-page deployment later encountered a transient timeout before its
+first SSH command reached the VPS. The server remained reachable from a second
+network and HTTPS stayed healthy. Deployment SSH and rsync calls now use bounded
+connection attempts, explicit timeouts and keep-alives so a short network drop
+does not immediately abandon a release.
+
 ## Cutover sequence
 
 1. Pass `npm test` and local visual review.
