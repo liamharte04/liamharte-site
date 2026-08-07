@@ -29,6 +29,21 @@ for (const file of htmlFiles) {
   if (!/<meta name="robots"/.test(source)) failures.push(`${label}: missing robots metadata`);
   if (source.includes("—")) failures.push(`${label}: contains an em dash`);
   if (/Alex Morgan|laws of Greece|Liam Harte Ltd\./.test(source)) failures.push(`${label}: contains inherited template content`);
+  if (/Belfast-based founder|startup mentor in Belfast|Founder of Rephobia in Belfast/.test(source)) {
+    failures.push(`${label}: contains the unresolved personal-location claim`);
+  }
+  if (source.includes('"homeLocation"')) {
+    failures.push(`${label}: Person schema must remain location-neutral until Liam confirms it`);
+  }
+
+  if (["index.html", "about\\index.html"].includes(label)) {
+    if (!source.includes('"@id": "https://liamharte.com/#person"')) {
+      failures.push(`${label}: missing canonical Liam Harte Person identifier`);
+    }
+    if (!source.includes('"@id": "https://rephobia.com/#organization"')) {
+      failures.push(`${label}: missing reciprocal Rephobia Organization identifier`);
+    }
+  }
 
   for (const match of source.matchAll(/<img\b[^>]*>/g)) {
     if (!/\balt="[^"]*"/.test(match[0])) failures.push(`${label}: image is missing alt attribute`);

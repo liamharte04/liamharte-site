@@ -19,7 +19,7 @@ the identity of Liam Harte, founder of Rephobia.
 | Property | Current public state | Status | Required action |
 | --- | --- | --- | --- |
 | Liam Harte LinkedIn | Search foregrounds Mercedes AMG High Performance Powertrains and Northampton; the About preview references Rephobia. | Needs Liam | Confirm the accurate current role and public location, then align the headline, About text and website field. |
-| Rephobia LinkedIn company page | Founder wording and `rephobia.com` are present. Public details say Belfast, founded 2023 and `Self-Employed`. | Needs Liam | Confirm the legally and historically accurate founding year, headquarters wording and organisation type before editing. |
+| Rephobia LinkedIn company page | Founder wording and `rephobia.com` are present. Public details say Belfast, founded 2023 and `Self-Employed`. | Needs Liam sign-in | Companies House resolves the company facts: incorporated 30 April 2024, active private limited company, registered office in Belfast. Update LinkedIn to founded 2024 and `Privately Held` after Liam signs in. |
 | Liam Harte GitHub | The account existed, but its account-level bio and website fields were not identity-led. | Partly complete | Public profile README now links the personal site, Rephobia, LinkedIn and recognition sources. Updating account-level fields is optional and requires GitHub `user` OAuth scope. |
 | Rephobia founder page | Previously linked to another person's `linkedin.com/in/liam-harte/` profile and did not link to Liam's official site. | Complete | Corrected and deployed. Both public hostnames now link to `liamharte.com` and `linkedin.com/in/liamharte04`. |
 | Liam Harte website | Previously lacked a stable entity graph and substantial founder pages. | Complete | Owned site now has consistent Person data, recognition, founder and speaking pages, plus reciprocal Rephobia and GitHub references. |
@@ -31,20 +31,25 @@ the identity of Liam Harte, founder of Rephobia.
 The following cannot be safely harmonised from current public material alone:
 
 1. Liam's current public location. Recent material points to
-   Northampton/Northamptonshire, while the personal site currently says
-   Belfast.
+   Northampton/Northamptonshire, while earlier personal-site wording said
+   Belfast. The owned site was made location-neutral on 7 August 2026 pending
+   confirmation.
 2. Whether and how a current or completed Mercedes AMG High Performance
    Powertrains role should appear in Liam's biography.
-3. Rephobia's public founding year. The company LinkedIn page says 2023, while
-   current first-party wording and the incorporated company history point to
-   2024.
-4. Whether the Rephobia LinkedIn organisation type should describe the current
-   limited company rather than `Self-Employed`.
-5. The preferred public headquarters wording for Rephobia.
 
-No profile should be changed by guessing these facts. Once Liam confirms them,
-the same concise wording should be applied to LinkedIn, the personal site,
-Rephobia and future organiser biographies.
+## Resolved company facts
+
+The [official Companies House record](https://find-and-update.company-information.service.gov.uk/company/NI715353)
+identifies Rephobia Limited, company number NI715353, as an active private
+limited company incorporated on 30 April 2024, with its registered office in
+Belfast. These facts support changing the Rephobia LinkedIn year from 2023 to
+2024 and its type from `Self-Employed` to `Privately Held`. They do not establish
+Liam's current personal location.
+
+No personal profile should be changed by guessing the unresolved location or
+employment facts. Once Liam confirms them, the same concise wording should be
+applied to LinkedIn, the personal site, Rephobia and future organiser
+biographies.
 
 ## Recommended LinkedIn structure after confirmation
 
