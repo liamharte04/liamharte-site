@@ -67,4 +67,13 @@ jobs:
             https://liamharte.com/about/ >/dev/null
           curl --fail --silent --show-error \
             --resolve "liamharte.com:443:${SSH_HOST}" \
+            https://liamharte.com/rephobia-founder/ >/dev/null
+          curl --fail --silent --show-error \
+            --resolve "liamharte.com:443:${SSH_HOST}" \
+            https://liamharte.com/recognition/ >/dev/null
+          curl --fail --silent --show-error \
+            --resolve "liamharte.com:443:${SSH_HOST}" \
+            https://liamharte.com/speaking/ >/dev/null
+          curl --fail --silent --show-error \
+            --resolve "liamharte.com:443:${SSH_HOST}" \
             https://liamharte.com/assets/css/styles.css >/dev/null

@@ -757,7 +757,9 @@ a {
 }
 
 .page-hero h1 {
+  max-width: 1080px;
   font-size: clamp(4rem, 9vw, 7.6rem);
+  text-wrap: balance;
 }
 
 .page-intro {
@@ -810,6 +812,111 @@ a {
 .timeline p {
   margin: 0;
   color: var(--ink-soft);
+}
+
+.evidence-grid,
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 46px;
+}
+
+.evidence-card,
+.principle-grid article {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+}
+
+.evidence-featured {
+  border-color: var(--terracotta);
+  background: var(--cream);
+}
+
+.evidence-card h3,
+.principle-grid h3 {
+  margin: 8px 0 16px;
+  font-size: 1.5rem;
+}
+
+.evidence-card > p:not(.recognition-source),
+.principle-grid p {
+  color: var(--ink-soft);
+}
+
+.evidence-card .text-link {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.source-list,
+.topic-list {
+  display: grid;
+  gap: 14px;
+}
+
+.source-list a,
+.topic-list article {
+  display: grid;
+  gap: 7px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.source-list a:first-child,
+.topic-list article:first-child {
+  padding-top: 0;
+}
+
+.source-list span {
+  color: var(--peach);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.source-list strong {
+  font-size: 1.18rem;
+}
+
+.source-list a:hover strong,
+.source-list a:focus-visible strong {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.principle-grid article > span {
+  color: var(--terracotta);
+  font-weight: 700;
+}
+
+.service-card-light {
+  border: 1px solid var(--line);
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.service-card-light p {
+  color: var(--ink-soft);
+}
+
+.topic-list h3 {
+  margin: 0 0 6px;
+  color: var(--paper);
+  font-size: 1.25rem;
+}
+
+.topic-list p {
+  margin: 0;
+  color: rgba(255, 249, 242, 0.76);
 }
 
 .legal-page {
@@ -866,6 +973,11 @@ a {
 
   .service-grid {
     grid-template-columns: 1fr;
+  }
+
+  .evidence-grid,
+  .principle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .service-card {
@@ -985,6 +1097,8 @@ a {
 
   .programme-proof,
   .recognition-grid,
+  .evidence-grid,
+  .principle-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }

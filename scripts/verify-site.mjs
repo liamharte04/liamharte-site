@@ -57,7 +57,7 @@ for (const file of htmlFiles) {
 }
 
 const sitemap = await readFile(join(root, "sitemap.xml"), "utf8");
-for (const url of ["https://liamharte.com/", "https://liamharte.com/about/", "https://liamharte.com/privacy/", "https://liamharte.com/terms/"]) {
+for (const url of ["https://liamharte.com/", "https://liamharte.com/about/", "https://liamharte.com/rephobia-founder/", "https://liamharte.com/recognition/", "https://liamharte.com/speaking/", "https://liamharte.com/privacy/", "https://liamharte.com/terms/"]) {
   if (!sitemap.includes(`<loc>${url}</loc>`)) failures.push(`sitemap.xml: missing ${url}`);
 }
 
@@ -70,4 +70,3 @@ if (failures.length) {
 }
 
 console.log(`Verified ${htmlFiles.length} HTML pages, internal targets, JSON-LD, sitemap and contact endpoint.`);
-

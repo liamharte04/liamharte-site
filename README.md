@@ -33,3 +33,6 @@ Then open <http://localhost:4173/>.
 
 Deployment, DNS, certificate, verification and rollback status are recorded in
 [`docs/MIGRATION.md`](docs/MIGRATION.md).
+
+The ongoing exact-name and entity-disambiguation programme is tracked in
+[`docs/IDENTITY_SEARCH.md`](docs/IDENTITY_SEARCH.md).

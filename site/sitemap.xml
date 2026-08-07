@@ -25,6 +25,36 @@
     </image:image>
   </url>
   <url>
+    <loc>https://liamharte.com/rephobia-founder/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://liamharte.com/assets/images/liam-harte-rephobia-founder.jpg</image:loc>
+      <image:title>Liam Harte, founder of Rephobia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://liamharte.com/recognition/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://liamharte.com/assets/images/liam-harte-national-entrepreneur-award.jpg</image:loc>
+      <image:title>Liam Harte receiving a national entrepreneurship award</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://liamharte.com/speaking/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://liamharte.com/assets/images/liam-harte-presenting.jpg</image:loc>
+      <image:title>Liam Harte presenting at Barclays Eagle Labs</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://liamharte.com/privacy/</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>yearly</changefreq>
@@ -37,4 +67,3 @@
     <priority>0.3</priority>
   </url>
 </urlset>
-

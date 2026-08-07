@@ -32,13 +32,14 @@ The migration also addresses the identity-search audit in
 ## Material corrections from the Carrd version
 
 - Made `Liam Harte` the only homepage `H1` and placed it at the top of the page.
-- Added a separately indexable `/about/` biography page.
+- Added separately indexable `/about/`, `/rephobia-founder/`, `/recognition/`
+  and `/speaking/` pages.
 - Added `ProfilePage`, `Person` and `WebSite` JSON-LD with one stable person ID.
 - Added visible links to official Peter Jones Foundation, Unity, Queen's
   University Belfast and Enterprise Ireland evidence.
 - Added accurate titles, descriptions, canonicals, Open Graph fields and image
   descriptions.
-- Replaced the single-URL sitemap with the four canonical public pages.
+- Replaced the single-URL sitemap with the seven canonical public pages.
 - Corrected the previous five-`H1` hierarchy and supplied alt text for meaningful
   images.
 - Removed broken footer anchors and the generic Calendly destination.
@@ -65,7 +66,7 @@ The migration also addresses the identity-search audit in
 | Check | Status |
 | --- | --- |
 | Raw Carrd snapshot and assets preserved | Complete |
-| Static page and JSON-LD checks | Complete |
+| Static page and JSON-LD checks | Complete across eight HTML documents |
 | Desktop visual review | Complete at 1440 x 1000 |
 | Mobile visual review | Complete at 390 x 844 |
 | Contact endpoint unit/health review | Complete without sending email |
@@ -76,8 +77,8 @@ The migration also addresses the identity-search audit in
 | GitHub Actions deployment | Complete: latest production workflow passed |
 | HTTPS certificate and DNS cutover | Complete |
 | Live metadata, links and schema recheck | Complete |
-| Search Console ownership | IONOS TXT created; awaiting DNS publication |
-| Search Console sitemap and indexing request | Pending ownership verification |
+| Search Console ownership | Complete under `liamharte04@gmail.com` |
+| Search Console sitemap and indexing request | Sitemap submitted; `/` and `/about/` priority requests accepted |
 
 The workflow uses the Node 24-based v5 releases of the official checkout and
 Node setup actions. This avoids the Node 20 runner deprecation warning observed
@@ -131,9 +132,9 @@ systemctl restart liamharte-contact
 
 ## Remaining external actions
 
-- Add the new sitemap to Google Search Console and request indexing for `/` and
-  `/about/` after the new ownership TXT record becomes visible and Google
-  completes verification.
+- Allow Google time to process the sitemap, recrawl the changed pages and
+  collect initial Search Console performance data.
+- Request indexing for the three new identity pages after they are deployed.
 - Update controlled profiles to link to the canonical site and use consistent
   identity wording.
 - Consider claiming a Google knowledge panel if one is created for Liam's
