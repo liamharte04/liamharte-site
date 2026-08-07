@@ -28,12 +28,40 @@ Preferred destinations:
 | 3 | Unity | Rephobia founder feature | Existing Unity for Humanity contact or official contact route | Add Liam's official personal or founder-profile link. | Needs Liam approval |
 | 4 | Enterprise Ireland | 2026 Student Entrepreneur Awards | `press@enterprise-ireland.com` or the awards contact | Add an official Liam or Rephobia destination if editorial policy permits. | Needs Liam approval |
 | 5 | Simply Business | Young Entrepreneur Fund | `press@simplybusiness.co.uk` | Add an official profile link where Liam is named. | Needs Liam approval |
-| 6 | Ardonagh Community Trust | Bright Future Prize finalist | Existing programme contact or official contact form | Add an official profile link and retain accurate founder wording. | Needs Liam approval |
+| 6 | Ardonagh Community Trust | Bright Future Prize finalist | `info@ardonaghtrust.org` or an existing programme contact | Add an official profile link and retain accurate founder wording. | Needs Liam approval |
 | 7 | Belfast Telegraph | Existing Liam/Rephobia coverage | `newseditor@belfasttelegraph.co.uk` or `digital.editorial@belfasttelegraph.co.uk` | Pitch a substantive update only if there is a new milestone, pilot or award. | Needs Liam approval and a news hook |
 
 Contact addresses should be rechecked on the publisher's official site
 immediately before sending. Use an existing named relationship contact when one
 exists, rather than sending a cold message to a general inbox.
+
+## Contact-route verification
+
+Rechecked against official publisher pages on 7 August 2026:
+
+- Peter Jones Foundation's official privacy page publishes
+  `info@pjfoundation.org`, while its main contact page provides a web form.
+- Queen's InQUBate publishes `InQUBate@qub.ac.uk` on its official site.
+- Enterprise Ireland's official press room publishes
+  `press@enterprise-ireland.com`.
+- Simply Business's official press-help page publishes
+  `press@simplybusiness.co.uk` and states that it is for media enquiries.
+- ACT's current Bright Future material publishes `info@ardonaghtrust.org`.
+- Belfast Telegraph's official contact page publishes both newsroom addresses
+  listed in the register.
+- No suitable public Unity for Humanity editorial address was verified. The
+  existing grant relationship contact remains the correct route and should not
+  be replaced with an unrelated support or privacy address.
+
+Official verification pages:
+
+- `https://www.peterjonesfoundation.org/contact`
+- `https://www.peterjonesfoundation.org/privacy-policy/`
+- `https://www.qub.ac.uk/sites/inqubate/`
+- `https://www.enterprise-ireland.com/en/press-room`
+- `https://help.simplybusiness.co.uk/hc/en-gb/articles/12667042191773-Press-or-media-enquiries`
+- `https://www.ardonaghtrust.org/our-news/bright-future-prize-2026-launches-today`
+- `https://www.belfasttelegraph.co.uk/contact-us`
 
 ## Draft 1: Peter Jones Foundation
 
