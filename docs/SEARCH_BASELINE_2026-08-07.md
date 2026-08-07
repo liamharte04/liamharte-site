@@ -56,6 +56,28 @@ tracked alongside the ambiguous exact-name query:
   retries were stopped to avoid pointless request throttling.
 - Search Console reports no manual actions and no security issues.
 
+## Post-deployment crawl and search observation
+
+Checked again on 7 August 2026 after the identity pages and reciprocal entity
+links were deployed:
+
+- All seven canonical URLs returned HTTP 200, declared their exact canonical
+  URL, allowed indexing and contained one H1.
+- `robots.txt` advertised the canonical sitemap, and the sitemap contained all
+  seven URLs. Plain HTTP and the `www` host both returned permanent redirects
+  to `https://liamharte.com/`.
+- An independent exact-name search snapshot surfaced multiple Rephobia-specific
+  third-party sources and `liamharte.com` in the returned set before the
+  University of Manchester academic profile. This is encouraging directional
+  evidence, not a stable or personalised Google ranking claim.
+- The search snapshot still displayed the homepage's older cached title,
+  `Liam Harte - Embedded Mentor for Accelerators & Programmes`, with a crawl
+  age of roughly two weeks. The live title already leads with Rephobia founder,
+  so Google and other search systems still need to recrawl it.
+- Targeted searches for `/rephobia-founder/`, `/recognition/` and `/speaking/`
+  returned the cached homepage rather than those URLs. Their indexing therefore
+  remains unproven and the accepted sitemap remains the active discovery route.
+
 ## Review checkpoints
 
 | Date | Review |
