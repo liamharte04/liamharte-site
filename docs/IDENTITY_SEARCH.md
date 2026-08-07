@@ -29,10 +29,11 @@ profiles and independent sources consistently identify the same person.
 | A04 | Critical | Submit the XML sitemap | Complete | `https://liamharte.com/sitemap.xml` submitted on 7 August 2026. |
 | A05 | Critical | Request a homepage recrawl | Complete | Search Console says the homepage is indexed and accepted it into the priority crawl queue. |
 | A06 | Critical | Request biography indexing | Complete | `/about/` was discovered but not indexed; priority crawl request accepted. |
-| A07 | High | Confirm sitemap processing succeeds | Waiting | Submission was accepted and already appears as `/about/`'s discovery source; recheck report after processing. |
-| A08 | High | Confirm all identity pages are indexed | Waiting | Recheck after the expanded pages are deployed and crawled. |
-| A09 | High | Confirm there are no manual actions or security issues | In progress | Review the new property after Google finishes initial data processing. |
+| A07 | High | Confirm sitemap processing succeeds | Complete | Search Console reports `Success`; the expanded seven-page sitemap was resubmitted successfully after deployment. Recheck Google's discovered-page count on 14 August. |
+| A08 | High | Confirm all identity pages are indexed | Waiting | Homepage and `/about/` priority requests were accepted. `/recognition/` returned a generic request error twice, so the successful sitemap is the active discovery route for all three new pages. |
+| A09 | High | Confirm there are no manual actions or security issues | Complete | Search Console reports no manual actions and no security issues. |
 | A10 | Medium | Review Core Web Vitals from field data | Waiting | New property currently has no collected field data. |
+| A11 | Medium | Preserve Search Console ownership | Recurring | Keep the IONOS verification TXT record and `liamharte04@gmail.com` owner access in place. |
 
 ## B. First-party entity foundation
 
@@ -61,9 +62,9 @@ profiles and independent sources consistently identify the same person.
 | C03 | Critical | Preserve and cite Queen's University Belfast coverage | Complete | InQUBate profile and School of EEECS news identified. |
 | C04 | Critical | Preserve and cite Enterprise Ireland recognition | Complete | Official 2026 High Achieving Merit Award article identified. |
 | C05 | High | Add Belfast Telegraph, Simply Business and ACT evidence | Complete | All three are linked from `/recognition/`; award facts are limited to the source record. |
-| C06 | High | Ask key publishers to link to `liamharte.com` | Needs Liam | Prepare individual requests; obtain send approval before contacting publishers. |
+| C06 | High | Ask key publishers to link to `liamharte.com` | Needs Liam | Seven targeted drafts, contacts and a send protocol are prepared in `IDENTITY_OUTREACH.md`; Liam must approve actual sending. |
 | C07 | High | Ask future speaker and award pages to use the official URL | Recurring | Include the preferred bio and URL in every organiser pack. |
-| C08 | Medium | Seek a small number of substantive founder interviews | Needs Liam | Outreach must be selective and newsworthy, not purchased link placement. |
+| C08 | Medium | Seek a small number of substantive founder interviews | Needs Liam | A Belfast Telegraph follow-up template is prepared, but it must wait for a concrete news hook and Liam's approval. |
 | C09 | Medium | Ask Rephobia partners to identify Liam consistently | Needs Liam | Confirm which partner relationships may be described publicly. |
 | C10 | Low | Avoid low-quality directories and paid link schemes | Recurring | No bulk profile creation, link exchanges or reputation manipulation. |
 
@@ -73,9 +74,9 @@ profiles and independent sources consistently identify the same person.
 | --- | --- | --- | --- | --- |
 | D01 | Critical | Align Liam's LinkedIn headline and About section | Needs Liam | Search currently foregrounds Mercedes AMG HPP and Northampton while the site says Belfast-based founder. Confirm the accurate current role and location before editing. |
 | D02 | Critical | Set LinkedIn's website to `liamharte.com` | Needs Liam | Make this change with D01 after Liam confirms the accurate current role and location. |
-| D03 | High | Align the Rephobia LinkedIn company page | In progress | Confirm founder wording, official site links and company details. |
+| D03 | High | Align the Rephobia LinkedIn company page | Needs Liam | Founder wording and `rephobia.com` exist, but public details say founded 2023, Belfast and `Self-Employed`. Confirm the accurate year, headquarters and organisation type first. |
 | D04 | High | Add an identity-led GitHub profile README | Complete | Created public profile repository `liamharte04/liamharte04` with official site, Rephobia, LinkedIn and recognition links. |
-| D05 | Medium | Audit programme, university and speaker profiles | In progress | Record which are editable and which require publisher requests. |
+| D05 | Medium | Audit programme, university and speaker profiles | Complete | Findings, controllable fields, editorial dependencies and factual conflicts are recorded in `IDENTITY_PROFILE_AUDIT_2026-08-07.md`. |
 | D06 | Medium | Keep portraits and biography wording consistent | Recurring | Use the official biography pack for future profiles. |
 | D07 | Low | Do not create an ORCID or Scholar profile for SEO | Complete | These would blur the distinction from the academic entity. |
 | D08 | Low | Do not create a self-promotional Wikipedia article | Complete | Reconsider only if independent notability supports uninvolved editorial coverage. |
@@ -84,28 +85,40 @@ profiles and independent sources consistently identify the same person.
 
 | ID | Priority | Action | Status | Evidence or next condition |
 | --- | --- | --- | --- | --- |
-| E01 | High | Capture an unpersonalised exact-name baseline | In progress | Record normal results separately from signed-in or location-personalised views. |
+| E01 | High | Capture an unpersonalised exact-name baseline | Complete | Dated exact-name, qualified-query and first-party baseline is recorded in `SEARCH_BASELINE_2026-08-07.md`. |
 | E02 | High | Track branded query impressions and clicks | Waiting | Search Console needs time to collect performance data. |
 | E03 | High | Check periodically for a claimable Liam Harte panel | Recurring | Claim only a panel that actually represents this Liam Harte. |
 | E04 | High | Report genuine entity conflation | Recurring | Use Google feedback only when facts, images or links are assigned to the wrong person. |
 | E05 | Medium | Track `Liam Harte Rephobia`, `Liam Harte entrepreneur` and `Liam Harte Belfast` | Recurring | Review monthly alongside the ambiguous exact-name query. |
 | E06 | Medium | Record authoritative new coverage | Recurring | Add durable sources to the recognition page and structured data after verification. |
-| E07 | Medium | Review this programme monthly for three months | Recurring | First review after Search Console has meaningful data. |
+| E07 | Medium | Review this programme monthly for three months | Recurring | Checkpoints are recorded for 14 August, 7 September, 7 October and 7 November 2026. |
 
 ## Current factual blockers
 
 1. Confirm whether Liam is currently based in Belfast, Northampton or another
    location, and how Mercedes AMG High Performance Powertrains should appear in
    the public biography.
-2. Confirm which outreach messages Liam authorises for actual sending after the
-   drafts and recipient list are prepared.
-3. Confirm any additional personally controlled public profiles that should be
+2. Confirm Rephobia's accurate public founding year, headquarters wording and
+   organisation type before changing its LinkedIn company details.
+3. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
+4. Confirm any additional personally controlled public profiles that should be
    connected through `sameAs`.
 
 GitHub's public profile README is complete. Updating the account-level bio and
 website fields through the CLI additionally requires GitHub's `user` OAuth
 scope. This is optional because the visible profile README now carries the
 official identity links.
+
+The reciprocal Rephobia identity link is complete. The live founder section now
+links to `liamharte.com` and the controlled `liamharte04` LinkedIn profile. The
+previous link to another person's same-name LinkedIn profile has been removed
+from both public Rephobia hostnames.
+
+## Supporting records
+
+- [`SEARCH_BASELINE_2026-08-07.md`](SEARCH_BASELINE_2026-08-07.md)
+- [`IDENTITY_PROFILE_AUDIT_2026-08-07.md`](IDENTITY_PROFILE_AUDIT_2026-08-07.md)
+- [`IDENTITY_OUTREACH.md`](IDENTITY_OUTREACH.md)
 
 ## Measures of progress
 

@@ -36,3 +36,9 @@ Deployment, DNS, certificate, verification and rollback status are recorded in
 
 The ongoing exact-name and entity-disambiguation programme is tracked in
 [`docs/IDENTITY_SEARCH.md`](docs/IDENTITY_SEARCH.md).
+
+The supporting execution records are:
+
+- [`docs/SEARCH_BASELINE_2026-08-07.md`](docs/SEARCH_BASELINE_2026-08-07.md)
+- [`docs/IDENTITY_PROFILE_AUDIT_2026-08-07.md`](docs/IDENTITY_PROFILE_AUDIT_2026-08-07.md)
+- [`docs/IDENTITY_OUTREACH.md`](docs/IDENTITY_OUTREACH.md)
