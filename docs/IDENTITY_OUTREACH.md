@@ -1,6 +1,6 @@
 # Liam Harte identity-link outreach pack
 
-**Prepared:** 7 August 2026  
+**Prepared:** 7 August 2026
 **Status:** Drafted, not sent. Liam's approval is required before any external
 contact.
 
@@ -54,8 +54,8 @@ simply give readers an authoritative next destination.
 
 Many thanks,
 
-Liam Harte  
-Founder, Rephobia  
+Liam Harte<br>
+Founder, Rephobia<br>
 https://liamharte.com/
 
 ## Draft 2: Queen's University Belfast InQUBate
@@ -78,8 +78,8 @@ useful.
 
 Many thanks,
 
-Liam Harte  
-Founder, Rephobia  
+Liam Harte<br>
+Founder, Rephobia<br>
 https://liamharte.com/
 
 ## Draft 3: Unity
@@ -123,7 +123,7 @@ description.
 
 Kind regards,
 
-Liam Harte  
+Liam Harte<br>
 Founder, Rephobia
 
 ## Draft 5: Simply Business
@@ -192,8 +192,8 @@ Would this be of interest for a short follow-up conversation?
 
 Kind regards,
 
-Liam Harte  
-Founder, Rephobia  
+Liam Harte<br>
+Founder, Rephobia<br>
 [phone number]
 
 ## Standard organiser biography pack

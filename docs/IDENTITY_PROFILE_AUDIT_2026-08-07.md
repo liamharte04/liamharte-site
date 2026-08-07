@@ -1,6 +1,6 @@
 # Liam Harte controlled-profile audit
 
-**Audited:** 7 August 2026  
+**Audited:** 7 August 2026
 **Scope:** Public profiles and first-party pages that can reinforce, or confuse,
 the identity of Liam Harte, founder of Rephobia.
 

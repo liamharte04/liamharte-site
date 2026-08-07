@@ -1,6 +1,6 @@
 # Liam Harte search baseline
 
-**Captured:** 7 August 2026  
+**Captured:** 7 August 2026
 **Purpose:** Provide a dated reference for measuring entity disambiguation and
 indexing progress. Search results vary by location, account, device and time, so
 this is a directional baseline rather than a fixed ranking report.
