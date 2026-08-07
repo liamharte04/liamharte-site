@@ -1,0 +1,17 @@
+{
+  "name": "Liam Harte",
+  "short_name": "Liam Harte",
+  "description": "Official website of Liam Harte, founder of Rephobia and startup mentor in Belfast.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f5f0e8",
+  "theme_color": "#3b1f12",
+  "icons": [
+    {
+      "src": "/assets/images/liam-harte-signature.png",
+      "sizes": "220x164",
+      "type": "image/png"
+    }
+  ]
+}
+

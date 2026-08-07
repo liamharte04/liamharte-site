@@ -1,0 +1,63 @@
+name: Verify and deploy liamharte.com
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: liamharte-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify site
+        run: npm test
+
+      - name: Configure deployment key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+
+      - name: Upload release
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+        run: |
+          release_id="${GITHUB_SHA}"
+          remote_stage="/var/www/liamharte-site/incoming/${release_id}"
+          ssh "$SSH_USER@$SSH_HOST" "mkdir -p '$remote_stage'"
+          rsync -az --delete \
+            --exclude '.git/' \
+            --exclude 'carrd-export-original/' \
+            --exclude 'assets/' \
+            ./ "$SSH_USER@$SSH_HOST:$remote_stage/"
+          ssh "$SSH_USER@$SSH_HOST" "bash '$remote_stage/ops/deploy-release.sh' '$remote_stage' '$release_id'"
+
+      - name: Verify origin over HTTP
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+        run: |
+          curl --fail --silent --show-error \
+            --resolve "liamharte.com:80:${SSH_HOST}" \
+            http://liamharte.com/ >/dev/null
+
