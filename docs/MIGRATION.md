@@ -73,10 +73,11 @@ The migration also addresses the identity-search audit in
 | VPS deploy user and release directories | Complete |
 | Nginx origin configuration | Complete |
 | HTTP origin test with local host resolution | Complete |
-| GitHub Actions deployment | Complete: run `31175859724` passed |
+| GitHub Actions deployment | Complete: latest production workflow passed |
 | HTTPS certificate and DNS cutover | Complete |
 | Live metadata, links and schema recheck | Complete |
-| Search Console sitemap and indexing request | External follow-up |
+| Search Console ownership | IONOS TXT created; awaiting DNS publication |
+| Search Console sitemap and indexing request | Pending ownership verification |
 
 The workflow uses the Node 24-based v5 releases of the official checkout and
 Node setup actions. This avoids the Node 20 runner deprecation warning observed
@@ -131,7 +132,8 @@ systemctl restart liamharte-contact
 ## Remaining external actions
 
 - Add the new sitemap to Google Search Console and request indexing for `/` and
-  `/about/` after production verification.
+  `/about/` after the new ownership TXT record becomes visible and Google
+  completes verification.
 - Update controlled profiles to link to the canonical site and use consistent
   identity wording.
 - Consider claiming a Google knowledge panel if one is created for Liam's
