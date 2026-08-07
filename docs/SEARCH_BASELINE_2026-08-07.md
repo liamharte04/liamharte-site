@@ -44,6 +44,9 @@ tracked alongside the ambiguous exact-name query:
 
 - `liamharte.com` is owned, hosted independently and verified as a Search
   Console Domain property.
+- Google's Search Console Team sent the Domain-property onboarding confirmation
+  on 7 August 2026. This independently confirms property verification, but is
+  not a ranking or indexing guarantee.
 - The homepage and `/about/` have successful priority crawl requests.
 - The sitemap is accepted with status `Success` and has been resubmitted after
   expansion to seven canonical public pages.
