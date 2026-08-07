@@ -50,6 +50,6 @@ and retest Nginx before reload.
 - `SSH_HOST`: `168.231.78.80`
 - `SSH_USER`: the dedicated `liamharte-deploy` account
 - `SSH_PRIVATE_KEY`: the matching deployment private key
+- `SSH_KNOWN_HOSTS`: pinned VPS host keys verified during bootstrap
 
 Never use the existing root key as the GitHub Actions key.
-

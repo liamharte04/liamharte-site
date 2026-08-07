@@ -1,7 +1,7 @@
 # liamharte.com Carrd migration record
 
 **Started:** 7 August 2026  
-**Current state:** Replacement implemented locally; production remains on Carrd.  
+**Current state:** Replacement deployed and origin-verified; production remains on Carrd pending IONOS DNS cutover and HTTPS.  
 **Canonical production URL:** <https://liamharte.com/>
 
 ## Objective
@@ -65,14 +65,15 @@ The migration also addresses the identity-search audit in
 | Check | Status |
 | --- | --- |
 | Raw Carrd snapshot and assets preserved | Complete |
-| Static page and JSON-LD checks | Pending first run |
-| Desktop visual review | Pending |
-| Mobile visual review | Pending |
-| Contact endpoint unit/health review | Pending |
-| GitHub repository created and pushed | Pending |
-| VPS deploy user and release directories | Pending |
-| Nginx origin configuration | Pending |
-| HTTP origin test with local host resolution | Pending |
+| Static page and JSON-LD checks | Complete |
+| Desktop visual review | Complete at 1440 x 1000 |
+| Mobile visual review | Complete at 390 x 844 |
+| Contact endpoint unit/health review | Complete without sending email |
+| GitHub repository created and pushed | Complete: `liamharte04/liamharte-site` |
+| VPS deploy user and release directories | Complete |
+| Nginx origin configuration | Complete |
+| HTTP origin test with local host resolution | Complete |
+| GitHub Actions deployment | Complete: run `31175859724` passed |
 | HTTPS certificate and DNS cutover | Not started |
 | Live metadata, links and schema recheck | Not started |
 | Search Console sitemap and indexing request | External follow-up |
@@ -99,8 +100,13 @@ The migration also addresses the identity-search audit in
 Before DNS cutover, no rollback is needed because Carrd remains public.
 
 After cutover, immediate rollback is to restore the previous Carrd DNS target.
-The exact pre-cutover DNS record and proxy state must be recorded before it is
-changed. A code-only rollback on the VPS uses the preceding release directory:
+The pre-cutover records observed on 7 August 2026 are:
+
+- Apex `A`: `liamharte.com` to `172.66.0.70`, TTL 60 seconds.
+- `www` `CNAME`: `www.liamharte.com` to `liamharte.com`, TTL 60 seconds.
+- Authoritative DNS: IONOS `ui-dns` nameservers.
+
+A code-only rollback on the VPS uses the preceding release directory:
 
 ```bash
 ln -sfn /var/www/liamharte-site/releases/RELEASE_ID /var/www/liamharte-site/current
@@ -118,4 +124,3 @@ systemctl restart liamharte-contact
 - Keep Wikipedia separate from this work unless independent coverage and
   notability requirements justify an article created through normal editorial
   processes.
-

@@ -5,9 +5,9 @@ personal site.
 
 ## Status
 
-The replacement site is prepared locally from an independently preserved Carrd
-snapshot. Production remains on Carrd until the VPS build passes acceptance
-checks and the domain is deliberately cut over.
+The replacement site is deployed to the VPS and its origin checks and automated
+GitHub deployment have passed. Production remains on Carrd until the IONOS DNS
+record is deliberately cut over and HTTPS is verified.
 
 ## Architecture
 
@@ -33,4 +33,3 @@ Then open <http://localhost:4173/>.
 Deployment, DNS, certificate and rollback status are recorded in
 [`docs/MIGRATION.md`](docs/MIGRATION.md). Do not describe the owned version as
 live until the production checks in that record have passed.
-
