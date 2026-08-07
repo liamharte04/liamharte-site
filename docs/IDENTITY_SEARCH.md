@@ -52,6 +52,7 @@ profiles and independent sources consistently identify the same person.
 | B11 | Medium | Create a reusable short, medium and long official biography | Complete | Short and expanded copy is on `/recognition/`; the full narrative is on `/about/`. |
 | B12 | Medium | Maintain a consistent primary portrait and image descriptions | Complete | Existing licensed site portraits are reused with specific alt text and image sitemap entries. |
 | B13 | Medium | Publish meaningful updates under Liam's name | Recurring | Prefer evidence-led founder updates over thin keyword pages. |
+| B14 | High | Publish a reciprocal founder entity graph on Rephobia | Complete | Rephobia's live Organization and `/who-we-are` ProfilePage schemas reuse `https://liamharte.com/#person` and link it to the controlled LinkedIn and GitHub profiles. Verified on Sites, apex and `www`. |
 
 ## C. Independent evidence and backlinks
 
@@ -74,7 +75,7 @@ profiles and independent sources consistently identify the same person.
 | --- | --- | --- | --- | --- |
 | D01 | Critical | Align Liam's LinkedIn headline and About section | Needs Liam | Search currently foregrounds Mercedes AMG HPP and Northampton while the site says Belfast-based founder. Confirm the accurate current role and location before editing. |
 | D02 | Critical | Set LinkedIn's website to `liamharte.com` | Needs Liam | Make this change with D01 after Liam confirms the accurate current role and location. |
-| D03 | High | Align the Rephobia LinkedIn company page | Needs Liam | Founder wording and `rephobia.com` exist, but public details say founded 2023, Belfast and `Self-Employed`. Confirm the accurate year, headquarters and organisation type first. |
+| D03 | High | Align the Rephobia LinkedIn company page | Needs Liam | Reciprocal site links and founder structured data are complete. LinkedIn still says founded 2023, Belfast and `Self-Employed`; confirm the accurate year, headquarters and organisation type before changing those fields. |
 | D04 | High | Add an identity-led GitHub profile README | Complete | Created public profile repository `liamharte04/liamharte04` with official site, Rephobia, LinkedIn and recognition links. |
 | D05 | Medium | Audit programme, university and speaker profiles | Complete | Findings, controllable fields, editorial dependencies and factual conflicts are recorded in `IDENTITY_PROFILE_AUDIT_2026-08-07.md`. |
 | D06 | Medium | Keep portraits and biography wording consistent | Recurring | Use the official biography pack for future profiles. |
