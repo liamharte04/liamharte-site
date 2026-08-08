@@ -1,6 +1,7 @@
 # Liam Harte controlled-profile audit
 
 **Audited:** 7 August 2026
+**Updated:** 8 August 2026
 **Scope:** Public profiles and first-party pages that can reinforce, or confuse,
 the identity of Liam Harte, founder of Rephobia.
 
@@ -18,7 +19,7 @@ the identity of Liam Harte, founder of Rephobia.
 
 | Property | Current public state | Status | Required action |
 | --- | --- | --- | --- |
-| Liam Harte LinkedIn | Contact information now lists `liamharte.com` as Personal and `rephobia.com` as Company. Search still foregrounds Mercedes AMG High Performance Powertrains and Northampton; the About preview references Rephobia. | Partly complete | Confirm the accurate current role and public location, then align the headline and About text. |
+| Liam Harte LinkedIn | Contact information lists `liamharte.com` as Personal and `rephobia.com` as Company. The headline now foregrounds Rephobia and XR for Health, and the About section describes the Mercedes AMG HPP placement as completed. LinkedIn still displays Northampton. | Partly complete | Confirm the exact public location and placement end month/year before changing the location or Experience entry. |
 | Rephobia LinkedIn company page | Public details now link to `https://rephobia.com`, say founded 2024 and identify the type as `Privately Held`. | Complete | Corrected and verified in public member view on 8 August 2026. |
 | Liam Harte GitHub | The account existed, but its account-level bio and website fields were not identity-led. | Partly complete | Public profile README now links the personal site, Rephobia, LinkedIn and recognition sources. Updating account-level fields is optional and requires GitHub `user` OAuth scope. |
 | Rephobia founder page | Previously linked to another person's `linkedin.com/in/liam-harte/` profile and did not link to Liam's official site. | Complete | Corrected and deployed. Both public hostnames now link to `liamharte.com` and `linkedin.com/in/liamharte04`. |
@@ -30,12 +31,12 @@ the identity of Liam Harte, founder of Rephobia.
 
 The following cannot be safely harmonised from current public material alone:
 
-1. Liam's current public location. Recent material points to
-   Northampton/Northamptonshire, while earlier personal-site wording said
-   Belfast. The owned site was made location-neutral on 7 August 2026 pending
-   confirmation.
-2. Whether and how a current or completed Mercedes AMG High Performance
-   Powertrains role should appear in Liam's biography.
+1. Liam confirmed on 8 August 2026 that he is not based in Belfast. The exact
+   preferred public location remains unconfirmed, so LinkedIn still displays
+   Northampton and the owned site remains location-neutral.
+2. Liam confirmed that the Mercedes AMG High Performance Powertrains placement
+   has finished. Its exact end month and year remain unconfirmed, so the
+   Experience entry dates were not changed.
 
 ## Resolved company facts
 
@@ -47,26 +48,26 @@ Belfast. These facts support changing the Rephobia LinkedIn year from 2023 to
 Liam's current personal location.
 
 No personal profile should be changed by guessing the unresolved location or
-employment facts. Once Liam confirms them, the same concise wording should be
+placement end date. Once Liam confirms them, the same concise wording should be
 applied to LinkedIn, the personal site, Rephobia and future organiser
 biographies.
 
-## Recommended LinkedIn structure after confirmation
+## Implemented LinkedIn structure
 
-Headline pattern:
+Headline:
 
-> Founder of Rephobia | [accurate current professional or study role]
+> Founder of Rephobia | National Entrepreneur of the Year 2025 | RAE
+> Engineering Leaders Scholar | XR for Health
 
-Opening About pattern:
+Opening About wording:
 
-> I am Liam Harte, founder of Rephobia, a clinician-operated virtual reality
-> platform being developed to support graded exposure within therapy. My work
-> combines product development, entrepreneurship and collaboration with
-> clinicians and researchers.
+> I’m Liam Harte, founder of Rephobia, a therapist-led VR exposure therapy
+> platform designed to make evidence-based treatment for phobias more
+> accessible, scalable and clinically grounded.
 
-The final text must use the confirmed location and current-role facts. The
-website field should point to `https://liamharte.com/`, while Rephobia remains a
-separate featured link or experience entry.
+The About section also states that the Mercedes AMG HPP placement was recently
+completed. Recognition and collaboration details were retained. The location
+and Experience end date remain unchanged pending exact facts.
 
 ## LinkedIn changes on 8 August 2026
 
@@ -80,9 +81,13 @@ separate featured link or experience entry.
   overlay with the intended labels.
 - Declined LinkedIn's company-edit sharing prompt. No post, message, comment,
   reaction, follow or outreach action was performed.
-- Left the personal headline, About text and location unchanged because the
-  current Mercedes AMG HPP role and public location still require Liam's
-  confirmation.
+- Replaced the personal headline with the approved founder-led wording and
+  updated the About section to describe the Mercedes AMG HPP placement as
+  recently completed. The recognition and collaboration details were retained.
+- Verified both changes on the live profile. LinkedIn showed only its Premium
+  upsell confirmation, with no sharing prompt and no post created.
+- Left the personal location and Mercedes Experience dates unchanged because
+  the exact location and placement end month/year remain unconfirmed.
 
 ## Guardrails
 

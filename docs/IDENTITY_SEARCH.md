@@ -74,7 +74,7 @@ profiles and independent sources consistently identify the same person.
 
 | ID | Priority | Action | Status | Evidence or next condition |
 | --- | --- | --- | --- | --- |
-| D01 | Critical | Align Liam's LinkedIn headline and About section | Needs Liam | Search currently foregrounds Mercedes AMG HPP and Northampton. The owned site is now location-neutral; confirm the accurate current role and location before editing LinkedIn. |
+| D01 | Critical | Align Liam's LinkedIn headline and About section | Complete | Founder-led headline and approved About wording are live. The About section now describes the Mercedes AMG HPP placement as recently completed. Verified on 8 August 2026. |
 | D02 | Critical | Set LinkedIn's website to `liamharte.com` | Complete | Personal contact information now lists `liamharte.com` as Personal while retaining `rephobia.com` as Company. Verified on 8 August 2026. |
 | D03 | High | Align the Rephobia LinkedIn company page | Complete | Website corrected to `https://rephobia.com`, year to 2024 and type to `Privately Held`; verified in public member view on 8 August 2026. |
 | D04 | High | Add an identity-led GitHub profile README | Complete | Created public profile repository `liamharte04/liamharte04` with official site, Rephobia, LinkedIn and recognition links. |
@@ -82,6 +82,7 @@ profiles and independent sources consistently identify the same person.
 | D06 | Medium | Keep portraits and biography wording consistent | Recurring | Use the official biography pack for future profiles. |
 | D07 | Low | Do not create an ORCID or Scholar profile for SEO | Complete | These would blur the distinction from the academic entity. |
 | D08 | Low | Do not create a self-promotional Wikipedia article | Complete | Reconsider only if independent notability supports uninvolved editorial coverage. |
+| D09 | High | Confirm the public location and close the completed Mercedes placement dates | Needs Liam | Liam confirmed he is not in Belfast and the placement has finished. The exact public location and end month/year are still required before editing the location or Experience entry. |
 
 ## E. Knowledge feature and search monitoring
 
@@ -97,9 +98,9 @@ profiles and independent sources consistently identify the same person.
 
 ## Current factual blockers
 
-1. Confirm whether Liam is currently based in Belfast, Northampton or another
-   location, and how Mercedes AMG High Performance Powertrains should appear in
-   the public biography.
+1. Confirm Liam's exact preferred public location and the month/year his
+   Mercedes AMG High Performance Powertrains placement finished. LinkedIn still
+   displays Northampton, and its Experience dates were intentionally unchanged.
 2. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
 3. Confirm any additional personally controlled public profiles that should be
    connected through `sameAs`.
