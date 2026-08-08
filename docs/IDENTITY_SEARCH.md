@@ -75,8 +75,8 @@ profiles and independent sources consistently identify the same person.
 | ID | Priority | Action | Status | Evidence or next condition |
 | --- | --- | --- | --- | --- |
 | D01 | Critical | Align Liam's LinkedIn headline and About section | Needs Liam | Search currently foregrounds Mercedes AMG HPP and Northampton. The owned site is now location-neutral; confirm the accurate current role and location before editing LinkedIn. |
-| D02 | Critical | Set LinkedIn's website to `liamharte.com` | Needs Liam | Make this change with D01 after Liam confirms the accurate current role and location. |
-| D03 | High | Align the Rephobia LinkedIn company page | Needs Liam | Companies House confirms incorporation on 30 April 2024, private limited company status and a Belfast registered office. LinkedIn still says founded 2023 and `Self-Employed`; a signed-in LinkedIn session is now the blocker. |
+| D02 | Critical | Set LinkedIn's website to `liamharte.com` | Complete | Personal contact information now lists `liamharte.com` as Personal while retaining `rephobia.com` as Company. Verified on 8 August 2026. |
+| D03 | High | Align the Rephobia LinkedIn company page | Complete | Website corrected to `https://rephobia.com`, year to 2024 and type to `Privately Held`; verified in public member view on 8 August 2026. |
 | D04 | High | Add an identity-led GitHub profile README | Complete | Created public profile repository `liamharte04/liamharte04` with official site, Rephobia, LinkedIn and recognition links. |
 | D05 | Medium | Audit programme, university and speaker profiles | Complete | Findings, controllable fields, editorial dependencies and factual conflicts are recorded in `IDENTITY_PROFILE_AUDIT_2026-08-07.md`. |
 | D06 | Medium | Keep portraits and biography wording consistent | Recurring | Use the official biography pack for future profiles. |
@@ -100,10 +100,8 @@ profiles and independent sources consistently identify the same person.
 1. Confirm whether Liam is currently based in Belfast, Northampton or another
    location, and how Mercedes AMG High Performance Powertrains should appear in
    the public biography.
-2. Sign in to LinkedIn so the Rephobia company year and organisation type can
-   be corrected from the official Companies House record.
-3. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
-4. Confirm any additional personally controlled public profiles that should be
+2. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
+3. Confirm any additional personally controlled public profiles that should be
    connected through `sameAs`.
 
 GitHub's public profile README is complete. Updating the account-level bio and

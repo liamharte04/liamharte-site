@@ -18,8 +18,8 @@ the identity of Liam Harte, founder of Rephobia.
 
 | Property | Current public state | Status | Required action |
 | --- | --- | --- | --- |
-| Liam Harte LinkedIn | Search foregrounds Mercedes AMG High Performance Powertrains and Northampton; the About preview references Rephobia. | Needs Liam | Confirm the accurate current role and public location, then align the headline, About text and website field. |
-| Rephobia LinkedIn company page | Founder wording and `rephobia.com` are present. Public details say Belfast, founded 2023 and `Self-Employed`. | Needs Liam sign-in | Companies House resolves the company facts: incorporated 30 April 2024, active private limited company, registered office in Belfast. Update LinkedIn to founded 2024 and `Privately Held` after Liam signs in. |
+| Liam Harte LinkedIn | Contact information now lists `liamharte.com` as Personal and `rephobia.com` as Company. Search still foregrounds Mercedes AMG High Performance Powertrains and Northampton; the About preview references Rephobia. | Partly complete | Confirm the accurate current role and public location, then align the headline and About text. |
+| Rephobia LinkedIn company page | Public details now link to `https://rephobia.com`, say founded 2024 and identify the type as `Privately Held`. | Complete | Corrected and verified in public member view on 8 August 2026. |
 | Liam Harte GitHub | The account existed, but its account-level bio and website fields were not identity-led. | Partly complete | Public profile README now links the personal site, Rephobia, LinkedIn and recognition sources. Updating account-level fields is optional and requires GitHub `user` OAuth scope. |
 | Rephobia founder page | Previously linked to another person's `linkedin.com/in/liam-harte/` profile and did not link to Liam's official site. | Complete | Corrected and deployed. Both public hostnames now link to `liamharte.com` and `linkedin.com/in/liamharte04`. |
 | Liam Harte website | Previously lacked a stable entity graph and substantial founder pages. | Complete | Owned site now has consistent Person data, recognition, founder and speaking pages, plus reciprocal Rephobia and GitHub references. |
@@ -67,6 +67,22 @@ Opening About pattern:
 The final text must use the confirmed location and current-role facts. The
 website field should point to `https://liamharte.com/`, while Rephobia remains a
 separate featured link or experience entry.
+
+## LinkedIn changes on 8 August 2026
+
+- Updated the Rephobia company website to `https://rephobia.com`, founding year
+  to 2024 and company type to `Privately Held`.
+- Verified those company facts in LinkedIn's public member view.
+- Added `https://liamharte.com` to Liam's personal contact information as a
+  Personal website while retaining `https://rephobia.com` as the Company
+  website.
+- Verified that both websites appear in the personal contact-information
+  overlay with the intended labels.
+- Declined LinkedIn's company-edit sharing prompt. No post, message, comment,
+  reaction, follow or outreach action was performed.
+- Left the personal headline, About text and location unchanged because the
+  current Mercedes AMG HPP role and public location still require Liam's
+  confirmation.
 
 ## Guardrails
 
