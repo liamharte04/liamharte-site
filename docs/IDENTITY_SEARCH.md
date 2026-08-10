@@ -54,6 +54,10 @@ profiles and independent sources consistently identify the same person.
 | B13 | Medium | Publish meaningful updates under Liam's name | Recurring | Prefer evidence-led founder updates over thin keyword pages. |
 | B14 | High | Publish a reciprocal founder entity graph on Rephobia | Complete | Rephobia's live Organization and `/who-we-are` ProfilePage schemas reuse `https://liamharte.com/#person` and link it to the controlled LinkedIn and GitHub profiles. Verified on Sites, apex and `www`. |
 | B15 | High | Remove disputed personal-location signals until confirmed | Complete | Location-neutral titles, descriptions, biography copy, footers and Person schema replaced the conflicting Belfast claim. QUB and Rephobia's verified Belfast connections remain accurately described. |
+| B16 | High | Resolve `knowsAbout` and `alumniOf` to Wikidata entities | Complete | Five `DefinedTerm` nodes carry verified QIDs, led by virtual reality exposure therapy `Q69886677`. `alumniOf` carries QUB `Q877925`. All QIDs confirmed via `wbgetentities`, not label lookup. |
+| B17 | High | Add explicit person-disambiguation properties | Complete | `disambiguatingDescription`, `mainEntityOfPage` and two `hasOccupation` nodes added. `address`/`homeLocation` deliberately omitted pending D09; `birthDate` deliberately omitted (see decision log). |
+| B18 | High | Corroborate identity with a government record | Complete | Companies House officer record for Liam Padraic HARTE (Rephobia Limited, NI715353) added to `sameAs` on all five identity pages, alongside `rephobia.com/who-we-are`. Verified HTTP 200. |
+| B19 | Critical | Publish the complete independent press corpus | Complete | `subjectOf` expanded from 4 to 15 verified articles with `name`, `publisher` and `datePublished`, led by BBC News. `/recognition/` gained a press section and its `ItemList` went from 7 to 15. |
 
 ## C. Independent evidence and backlinks
 
@@ -64,6 +68,8 @@ profiles and independent sources consistently identify the same person.
 | C03 | Critical | Preserve and cite Queen's University Belfast coverage | Complete | InQUBate profile and School of EEECS news identified. |
 | C04 | Critical | Preserve and cite Enterprise Ireland recognition | Complete | Official 2026 High Achieving Merit Award article identified. |
 | C05 | High | Add Belfast Telegraph, Simply Business and ACT evidence | Complete | All three are linked from `/recognition/`; award facts are limited to the source record. |
+| C11 | Critical | Cite the BBC News coverage | Complete | `bbc.co.uk/news/articles/clyg9ew3q00o` (8 March 2026) was absent from the entire site and every schema node. It is now first in `subjectOf` and first in the `/recognition/` `ItemList`. This was the single largest gap in the entity graph. |
+| C12 | High | Cite the remaining verified press corpus | Complete | Silicon Republic, two Belfast News Letter articles, We Are Tyrone, ESBF and Start Your Business Magazine added. All verified HTTP 200 except Belfast Telegraph, which returns 403 to non-browser agents but is live and paywalled. |
 | C06 | High | Ask key publishers to link to `liamharte.com` | Needs Liam | Seven targeted drafts, contacts and a send protocol are prepared in `IDENTITY_OUTREACH.md`; Liam must approve actual sending. |
 | C07 | High | Ask future speaker and award pages to use the official URL | Recurring | Include the preferred bio and URL in every organiser pack. |
 | C08 | Medium | Seek a small number of substantive founder interviews | Needs Liam | A Belfast Telegraph follow-up template is prepared, but it must wait for a concrete news hook and Liam's approval. |
@@ -95,6 +101,20 @@ profiles and independent sources consistently identify the same person.
 | E05 | Medium | Track `Liam Harte Rephobia`, `Liam Harte entrepreneur` and `Liam Harte Belfast` | Recurring | Review monthly alongside the ambiguous exact-name query. |
 | E06 | Medium | Record authoritative new coverage | Recurring | Add durable sources to the recognition page and structured data after verification. |
 | E07 | Medium | Review this programme monthly for three months | Recurring | Checkpoints are recorded for 14 August, 7 September, 7 October and 7 November 2026. |
+
+## Decision log: recommendations considered and declined
+
+An external SEO review on 10 August 2026 proposed several changes that were
+assessed and **deliberately not implemented**. They are recorded here so they
+are not reintroduced by a later review.
+
+| Proposal | Decision | Reason |
+| --- | --- | --- |
+| Create an ORCID iD and add it to `sameAs` | Declined | Duplicates D07. ORCID is an academic-author identifier. Adopting one moves this entity *towards* the Manchester professor of Irish Literature rather than away, which is the opposite of the objective. |
+| Add `address` / `homeLocation` of Belfast | Declined | Contradicts B15 and D09. Liam has confirmed he is not in Belfast. Reinstating the claim would republish a known-inaccurate personal fact. Blocked until D09 resolves. |
+| Add `birthDate` | Declined | Publishes a personal data point that is not required for disambiguation and is not currently public on any first-party property. The Companies House record (B18) already provides government-grade corroboration without it. |
+| Create a Wikidata item for Liam personally | Deferred | The competing academic entity `Q57416185` is anchored by ORCID, VIAF, ISNI, LCCN, BnF and NKC authority records. A self-created item is unlikely to survive notability review and a deletion log is worse than no item. Reconsider only after a Rephobia Limited item is established, then attach via `founder` (P112). |
+| Wikidata item for Rephobia Limited | Needs Liam | Notability case is materially stronger than the personal one (BBC, Unity, Belfast Telegraph, Silicon Republic, QUB, company number). Requires Liam's decision before creating anything on an external platform. |
 
 ## Current factual blockers
 
