@@ -29,11 +29,14 @@ for (const file of htmlFiles) {
   if (!/<meta name="robots"/.test(source)) failures.push(`${label}: missing robots metadata`);
   if (source.includes("—")) failures.push(`${label}: contains an em dash`);
   if (/Alex Morgan|laws of Greece|Liam Harte Ltd\./.test(source)) failures.push(`${label}: contains inherited template content`);
-  if (/Belfast-based founder|startup mentor in Belfast|Founder of Rephobia in Belfast/.test(source)) {
-    failures.push(`${label}: contains the unresolved personal-location claim`);
-  }
-  if (source.includes('"homeLocation"')) {
-    failures.push(`${label}: Person schema must remain location-neutral until Liam confirms it`);
+  // Liam confirmed Belfast on 16 August 2026 (D09 resolved, B20). This guard
+  // used to forbid any personal-location claim while the fact was unconfirmed.
+  // It now asserts the opposite: the confirmed locality must be present and no
+  // superseded locality may reappear. Do not weaken this to a no-op - the whole
+  // point is that a location claim is only ever as good as the confirmation
+  // behind it.
+  if (/Northampton/.test(source)) {
+    failures.push(`${label}: contains the superseded Northampton location claim`);
   }
 
   if (["index.html", "about\\index.html"].includes(label)) {
@@ -42,6 +45,15 @@ for (const file of htmlFiles) {
     }
     if (!source.includes('"@id": "https://rephobia.com/#organization"')) {
       failures.push(`${label}: missing reciprocal Rephobia Organization identifier`);
+    }
+    if (!source.includes('"addressLocality": "Belfast"')) {
+      failures.push(`${label}: Person schema is missing the confirmed Belfast locality`);
+    }
+    if (!source.includes('"homeLocation"')) {
+      failures.push(`${label}: Person schema is missing homeLocation`);
+    }
+    if (!source.includes("https://www.wikidata.org/entity/Q10686")) {
+      failures.push(`${label}: Belfast is not resolved to its Wikidata entity`);
     }
   }
 
