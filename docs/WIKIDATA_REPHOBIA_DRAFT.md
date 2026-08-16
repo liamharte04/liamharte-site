@@ -1,7 +1,45 @@
 # Wikidata draft: Rephobia Limited
 
 **Prepared:** 16 August 2026
-**Status:** Draft for Liam's review. **Nothing has been created on Wikidata.**
+**Status:** **Stage 1 is done.** The item is live at
+[Q141104375](https://www.wikidata.org/wiki/Q141104375), created 16 August 2026
+under Liam's own account with the conflict-of-interest disclosure published at
+[Talk:Q141104375](https://www.wikidata.org/wiki/Talk:Q141104375).
+
+## What was actually created
+
+Seven statements, each value verified against the API after publishing rather
+than trusted from the autocomplete:
+
+| Property | Value | Sourced |
+| --- | --- | --- |
+| `P31` instance of | `Q4830453` business | |
+| `P2622` Companies House company ID | `NI715353` | self-evidencing |
+| `P571` inception | 2024-04-30 | Companies House |
+| `P17` country | `Q145` United Kingdom | |
+| `P159` headquarters location | `Q10686` Belfast | Companies House |
+| `P856` official website | `https://rephobia.com/` | |
+| `P452` industry | `Q5276090` digital health | |
+
+Two autocomplete traps were avoided and are worth remembering, because both
+would have been silently wrong:
+
+- **`digital health`** - the *first* suggestion is `Q50815224`, a SAGE academic
+  journal. The concept is third in the list.
+- **`Belfast`** - the list includes Belfast in Waldo County Maine, a Kenneth
+  Branagh film, a Boney M single and a Mago de Oz album before you get anywhere
+  near disambiguating. `Q10686` is the one described as capital city of
+  Northern Ireland.
+
+`P1454` legal form was **deliberately omitted**. Every available value is scoped
+to a jurisdiction, and the UK one is described as England and Wales while
+Rephobia is registered in Northern Ireland. An imprecise claim on a new
+conflict-of-interest item is worth less than no claim. This is explained on the
+talk page.
+
+**Still to do on Stage 1:** five of the seven statements carry no reference.
+Sourcing them (Companies House for the company facts, the press corpus for the
+rest) is the main thing that would harden the item against challenge.
 
 ## Why the company and not the person
 
