@@ -53,7 +53,8 @@ profiles and independent sources consistently identify the same person.
 | B12 | Medium | Maintain a consistent primary portrait and image descriptions | Complete | Existing licensed site portraits are reused with specific alt text and image sitemap entries. |
 | B13 | Medium | Publish meaningful updates under Liam's name | Recurring | Prefer evidence-led founder updates over thin keyword pages. |
 | B14 | High | Publish a reciprocal founder entity graph on Rephobia | Complete | Rephobia's live Organization and `/who-we-are` ProfilePage schemas reuse `https://liamharte.com/#person` and link it to the controlled LinkedIn and GitHub profiles. Verified on Sites, apex and `www`. |
-| B15 | High | Remove disputed personal-location signals until confirmed | Complete | Location-neutral titles, descriptions, biography copy, footers and Person schema replaced the conflicting Belfast claim. QUB and Rephobia's verified Belfast connections remain accurately described. |
+| B15 | High | Remove disputed personal-location signals until confirmed | Superseded by B20 | Location-neutral copy was correct while the location was unconfirmed. Liam confirmed on 16 August 2026 that he now lives in Belfast, so the claim is accurate and has been reinstated. |
+| B20 | High | Reinstate the confirmed Belfast location signal | Complete | Liam confirmed Belfast on 16 August 2026, resolving D09. Person schema carries `address`, `homeLocation` and `workLocation` (Belfast `Q10686`); homepage title, description, OG and Twitter tags say Belfast; a sitewide footer line reads "Belfast, Northern Ireland". This aligns the personal entity with Rephobia's registered address and QUB, and separates it geographically from the Manchester academic and the Cork dental surgeon. |
 | B16 | High | Resolve `knowsAbout` and `alumniOf` to Wikidata entities | Complete | Five `DefinedTerm` nodes carry verified QIDs, led by virtual reality exposure therapy `Q69886677`. `alumniOf` carries QUB `Q877925`. All QIDs confirmed via `wbgetentities`, not label lookup. |
 | B17 | High | Add explicit person-disambiguation properties | Complete | `disambiguatingDescription`, `mainEntityOfPage` and two `hasOccupation` nodes added. `address`/`homeLocation` deliberately omitted pending D09; `birthDate` deliberately omitted (see decision log). |
 | B18 | High | Corroborate identity with a government record | Complete | Companies House officer record for Liam Padraic HARTE (Rephobia Limited, NI715353) added to `sameAs` on all five identity pages, alongside `rephobia.com/who-we-are`. Verified HTTP 200. |
@@ -88,7 +89,7 @@ profiles and independent sources consistently identify the same person.
 | D06 | Medium | Keep portraits and biography wording consistent | Recurring | Use the official biography pack for future profiles. |
 | D07 | Low | Do not create an ORCID or Scholar profile for SEO | Complete | These would blur the distinction from the academic entity. |
 | D08 | Low | Do not create a self-promotional Wikipedia article | Complete | Reconsider only if independent notability supports uninvolved editorial coverage. |
-| D09 | High | Confirm the public location and close the completed Mercedes placement dates | Needs Liam | Liam confirmed he is not in Belfast and the placement has finished. The exact public location and end month/year are still required before editing the location or Experience entry. |
+| D09 | High | Confirm the public location and close the completed Mercedes placement dates | Partly resolved | **Location resolved 16 August 2026: Liam now lives in Belfast**, and first-party signals have been updated accordingly (B20). LinkedIn still displays Northampton and must be corrected by Liam to match. The Mercedes AMG HPP placement end month/year is still outstanding. |
 
 ## E. Knowledge feature and search monitoring
 
@@ -111,19 +112,25 @@ are not reintroduced by a later review.
 | Proposal | Decision | Reason |
 | --- | --- | --- |
 | Create an ORCID iD and add it to `sameAs` | Declined | Duplicates D07. ORCID is an academic-author identifier. Adopting one moves this entity *towards* the Manchester professor of Irish Literature rather than away, which is the opposite of the objective. |
-| Add `address` / `homeLocation` of Belfast | Declined | Contradicts B15 and D09. Liam has confirmed he is not in Belfast. Reinstating the claim would republish a known-inaccurate personal fact. Blocked until D09 resolves. |
+| Add `address` / `homeLocation` of Belfast | ~~Declined~~ **Now implemented** | Declined on 10 August because Liam was not in Belfast. He confirmed on 16 August that he now lives there, so the claim became accurate and was implemented as B20. Place-specificity is an asset here rather than a constraint: the objective is disambiguating a personal name, not ranking for a generic national term, and Belfast separates this entity from Manchester and Cork. |
 | Add `birthDate` | Declined | Publishes a personal data point that is not required for disambiguation and is not currently public on any first-party property. The Companies House record (B18) already provides government-grade corroboration without it. |
 | Create a Wikidata item for Liam personally | Deferred | The competing academic entity `Q57416185` is anchored by ORCID, VIAF, ISNI, LCCN, BnF and NKC authority records. A self-created item is unlikely to survive notability review and a deletion log is worse than no item. Reconsider only after a Rephobia Limited item is established, then attach via `founder` (P112). |
 | Wikidata item for Rephobia Limited | Needs Liam | Notability case is materially stronger than the personal one (BBC, Unity, Belfast Telegraph, Silicon Republic, QUB, company number). Requires Liam's decision before creating anything on an external platform. |
 
 ## Current factual blockers
 
-1. Confirm Liam's exact preferred public location and the month/year his
-   Mercedes AMG High Performance Powertrains placement finished. LinkedIn still
-   displays Northampton, and its Experience dates were intentionally unchanged.
-2. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
-3. Confirm any additional personally controlled public profiles that should be
+1. **Update LinkedIn's location to Belfast.** The site now states Belfast
+   (B20) but LinkedIn still displays Northampton, so the two most visible
+   first-party profiles currently disagree. A contradiction between them is
+   worse for entity resolution than either value alone. Only Liam can change
+   this.
+2. Confirm the month/year the Mercedes AMG High Performance Powertrains
+   placement finished, so the LinkedIn Experience entry can be closed.
+3. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
+4. Confirm any additional personally controlled public profiles that should be
    connected through `sameAs`.
+5. Decide whether to create a Wikidata item for Rephobia Limited (see the
+   decision log). This is the realistic route to a founder knowledge panel.
 
 GitHub's public profile README is complete. Updating the account-level bio and
 website fields through the CLI additionally requires GitHub's `user` OAuth

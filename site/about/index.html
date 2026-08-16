@@ -22,34 +22,59 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "@id": "https://liamharte.com/about/#profile-page",
-        "url": "https://liamharte.com/about/",
-        "name": "About Liam Harte, founder of Rephobia",
-        "dateModified": "2026-08-10",
-        "inLanguage": "en-GB",
-        "mainEntity": {
-          "@type": "Person",
-          "@id": "https://liamharte.com/#person",
-          "name": "Liam Harte",
-          "alternateName": "Liam Harte, founder of Rephobia",
-          "url": "https://liamharte.com/",
-          "image": "https://liamharte.com/assets/images/liam-harte-rephobia-founder.jpg",
-          "jobTitle": "Founder of Rephobia and startup mentor",
-          "description": "Founder of Rephobia, immersive-technology builder and startup mentor working across digital health, XR and impact innovation.",
-          "sameAs": ["https://www.linkedin.com/in/liamharte04", "https://github.com/liamharte04", "https://rephobia.com/who-we-are", "https://find-and-update.company-information.service.gov.uk/officers/R6_nj-IFjQYAcmTneHz9BvoK1LY/appointments"],
-          "worksFor": {
-            "@type": "Organization",
-            "@id": "https://rephobia.com/#organization",
-            "name": "Rephobia",
-            "url": "https://rephobia.com/"
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "@id": "https://liamharte.com/about/#profile-page",
+            "url": "https://liamharte.com/about/",
+            "name": "About Liam Harte, founder of Rephobia",
+            "isPartOf": { "@id": "https://liamharte.com/#website" },
+            "mainEntity": { "@id": "https://liamharte.com/#person" },
+            "dateModified": "2026-08-16",
+            "inLanguage": "en-GB"
           },
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Queen's University Belfast",
-            "url": "https://www.qub.ac.uk/"
+          {
+            "@type": "Person",
+            "@id": "https://liamharte.com/#person",
+            "name": "Liam Harte",
+            "alternateName": "Liam Harte, founder of Rephobia",
+            "url": "https://liamharte.com/",
+            "image": "https://liamharte.com/assets/images/liam-harte-rephobia-founder.jpg",
+            "jobTitle": "Founder of Rephobia and startup mentor",
+            "description": "Belfast-based founder of Rephobia, immersive-technology builder and startup mentor working across digital health, XR and impact innovation.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Belfast",
+              "addressRegion": "Northern Ireland",
+              "addressCountry": "GB"
+            },
+            "homeLocation": {
+              "@type": "Place",
+              "name": "Belfast",
+              "sameAs": "https://www.wikidata.org/entity/Q10686"
+            },
+            "sameAs": ["https://www.linkedin.com/in/liamharte04", "https://github.com/liamharte04", "https://rephobia.com/who-we-are", "https://find-and-update.company-information.service.gov.uk/officers/R6_nj-IFjQYAcmTneHz9BvoK1LY/appointments"],
+            "worksFor": {
+              "@type": "Organization",
+              "@id": "https://rephobia.com/#organization",
+              "name": "Rephobia",
+              "url": "https://rephobia.com/"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Queen's University Belfast",
+              "url": "https://www.qub.ac.uk/",
+              "sameAs": "https://www.wikidata.org/entity/Q877925"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://liamharte.com/" },
+              { "@type": "ListItem", "position": 2, "name": "About Liam", "item": "https://liamharte.com/about/" }
+            ]
           }
-        }
+        ]
       }
     </script>
   </head>
@@ -178,7 +203,7 @@
         <div><h2>Connect</h2><a href="https://www.linkedin.com/in/liamharte04" rel="me noopener">LinkedIn</a><a href="https://github.com/liamharte04" rel="me noopener">GitHub</a><a href="https://rephobia.com/" rel="noopener">Rephobia</a><a href="https://calendly.com/bookings-liamharte/programme-intro-call" rel="noopener">Book a call</a></div>
         <div><h2>Legal</h2><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
       </div>
-      <div class="shell footer-bottom"><p>© <span data-year>2026</span> Liam Harte. All rights reserved.</p><a href="#main">Back to top <span aria-hidden="true">↑</span></a></div>
+      <div class="shell footer-bottom"><p>© <span data-year>2026</span> Liam Harte. All rights reserved.</p><p>Belfast, Northern Ireland</p><a href="#main">Back to top <span aria-hidden="true">↑</span></a></div>
     </footer>
     <script src="/assets/js/main.js" defer></script>
   </body>
