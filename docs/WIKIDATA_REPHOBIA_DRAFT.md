@@ -11,15 +11,22 @@ under Liam's own account with the conflict-of-interest disclosure published at
 Seven statements, each value verified against the API after publishing rather
 than trusted from the autocomplete:
 
-| Property | Value | Sourced |
+Seven statements, **all seven referenced** (verified via the API: 0 unsourced).
+
+| Property | Value | Reference |
 | --- | --- | --- |
-| `P31` instance of | `Q4830453` business | |
-| `P2622` Companies House company ID | `NI715353` | self-evidencing |
+| `P31` instance of | `Q4830453` business | Companies House |
+| `P2622` Companies House company ID | `NI715353` | Companies House |
 | `P571` inception | 2024-04-30 | Companies House |
-| `P17` country | `Q145` United Kingdom | |
+| `P17` country | `Q145` United Kingdom | Companies House |
 | `P159` headquarters location | `Q10686` Belfast | Companies House |
-| `P856` official website | `https://rephobia.com/` | |
-| `P452` industry | `Q5276090` digital health | |
+| `P856` official website | `https://rephobia.com/` | Silicon Republic |
+| `P452` industry | `Q5276090` digital health | BBC News |
+
+Company facts cite the public record. The two claims the public record does not
+establish - that rephobia.com is the official site, and that the company works in
+digital health - cite independent journalism instead. Neither cites the Unity
+post, because Liam wrote it.
 
 Two autocomplete traps were avoided and are worth remembering, because both
 would have been silently wrong:
@@ -37,9 +44,10 @@ Rephobia is registered in Northern Ireland. An imprecise claim on a new
 conflict-of-interest item is worth less than no claim. This is explained on the
 talk page.
 
-**Still to do on Stage 1:** five of the seven statements carry no reference.
-Sourcing them (Companies House for the company facts, the press corpus for the
-rest) is the main thing that would harden the item against challenge.
+**Stage 1 is complete.** Nothing further is needed on the company item before
+Stage 2. If you want to strengthen it later, the natural additions are `P813`
+(retrieved) qualifiers on the Companies House references, and a second
+independent reference on `P452`.
 
 ## Why the company and not the person
 
