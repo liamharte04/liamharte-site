@@ -30,7 +30,8 @@ profiles and independent sources consistently identify the same person.
 | A05 | Critical | Request a homepage recrawl | Complete | Search Console says the homepage is indexed and accepted it into the priority crawl queue. |
 | A06 | Critical | Request biography indexing | Complete | `/about/` was discovered but not indexed; priority crawl request accepted. |
 | A07 | High | Confirm sitemap processing succeeds | Complete | Search Console reports `Success`; the expanded seven-page sitemap was resubmitted successfully after deployment. Recheck Google's discovered-page count on 14 August. |
-| A08 | High | Confirm all identity pages are indexed | Waiting | Homepage and `/about/` priority requests were accepted. `/recognition/` returned a generic request error twice, so the successful sitemap is the active discovery route for all three new pages. |
+| A08 | High | Confirm all identity pages are indexed | Complete | All seven pages report "URL is on Google". |
+| A12 | Critical | Recrawl the five pages changed on 16 August 2026 | Waiting | Priority indexing requested on 16 August for `/`, `/about/`, `/recognition/`, `/rephobia-founder/` and `/speaking/`; all five returned "URL was added to a priority crawl queue". This was needed because Google was serving a stale snapshot whose title and snippet still carried the removed "Belfast-based" wording, which no longer matched the live page. `/recognition/` and `/speaking/` now also report a valid `BreadcrumbList`. |
 | A09 | High | Confirm there are no manual actions or security issues | Complete | Search Console reports no manual actions and no security issues. |
 | A10 | Medium | Review Core Web Vitals from field data | Waiting | New property currently has no collected field data. |
 | A11 | Medium | Preserve Search Console ownership | Recurring | Keep the IONOS verification TXT record and `liamharte04@gmail.com` owner access in place. |
@@ -89,7 +90,7 @@ profiles and independent sources consistently identify the same person.
 | D06 | Medium | Keep portraits and biography wording consistent | Recurring | Use the official biography pack for future profiles. |
 | D07 | Low | Do not create an ORCID or Scholar profile for SEO | Complete | These would blur the distinction from the academic entity. |
 | D08 | Low | Do not create a self-promotional Wikipedia article | Complete | Reconsider only if independent notability supports uninvolved editorial coverage. |
-| D09 | High | Confirm the public location and close the completed Mercedes placement dates | Partly resolved | **Location resolved 16 August 2026: Liam now lives in Belfast**, and first-party signals have been updated accordingly (B20). LinkedIn still displays Northampton and must be corrected by Liam to match. The Mercedes AMG HPP placement end month/year is still outstanding. |
+| D09 | High | Confirm the public location and close the completed Mercedes placement dates | Location complete | **Location resolved 16 August 2026: Liam now lives in Belfast.** First-party signals updated (B20) and **LinkedIn changed from Northampton to Belfast on 16 August 2026**, so the site and LinkedIn now agree. LinkedIn derives City from the postal code, so the registered office postcode `BT1 3NQ` (Rephobia Limited, public on Companies House) was used rather than an invented one; the exact city "Belfast" was chosen over "Belfast Metropolitan Area" to match `addressLocality` exactly. The Mercedes AMG HPP placement end month/year is still outstanding. |
 
 ## E. Knowledge feature and search monitoring
 
@@ -119,13 +120,9 @@ are not reintroduced by a later review.
 
 ## Current factual blockers
 
-1. **Update LinkedIn's location to Belfast.** The site now states Belfast
-   (B20) but LinkedIn still displays Northampton, so the two most visible
-   first-party profiles currently disagree. A contradiction between them is
-   worse for entity resolution than either value alone. Only Liam can change
-   this.
-2. Confirm the month/year the Mercedes AMG High Performance Powertrains
-   placement finished, so the LinkedIn Experience entry can be closed.
+1. Confirm the month/year the Mercedes AMG High Performance Powertrains
+   placement finished, so the LinkedIn Experience entry can be closed. The
+   Experience entry still shows it as ongoing.
 3. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
 4. Confirm any additional personally controlled public profiles that should be
    connected through `sameAs`.
