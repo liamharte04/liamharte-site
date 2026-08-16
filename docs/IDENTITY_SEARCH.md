@@ -90,7 +90,7 @@ profiles and independent sources consistently identify the same person.
 | D06 | Medium | Keep portraits and biography wording consistent | Recurring | Use the official biography pack for future profiles. |
 | D07 | Low | Do not create an ORCID or Scholar profile for SEO | Complete | These would blur the distinction from the academic entity. |
 | D08 | Low | Do not create a self-promotional Wikipedia article | Complete | Reconsider only if independent notability supports uninvolved editorial coverage. |
-| D09 | High | Confirm the public location and close the completed Mercedes placement dates | Location complete | **Location resolved 16 August 2026: Liam now lives in Belfast.** First-party signals updated (B20) and **LinkedIn changed from Northampton to Belfast on 16 August 2026**, so the site and LinkedIn now agree. LinkedIn derives City from the postal code, so the registered office postcode `BT1 3NQ` (Rephobia Limited, public on Companies House) was used rather than an invented one; the exact city "Belfast" was chosen over "Belfast Metropolitan Area" to match `addressLocality` exactly. The Mercedes AMG HPP placement end month/year is still outstanding. |
+| D09 | High | Confirm the public location and close the completed Mercedes placement dates | Complete | **Location resolved 16 August 2026: Liam now lives in Belfast.** First-party signals updated (B20) and **LinkedIn changed from Northampton to Belfast on 16 August 2026**, so the site and LinkedIn now agree. LinkedIn derives City from the postal code, so the registered office postcode `BT1 3NQ` (Rephobia Limited, public on Companies House) was used rather than an invented one; the exact city "Belfast" was chosen over "Belfast Metropolitan Area" to match `addressLocality` exactly. The Mercedes AMG HPP placement is confirmed as August 2025 to July 2026 and the LinkedIn Experience entry already carries those exact dates, so no edit was needed - the earlier note that it was left open was out of date. |
 
 ## E. Knowledge feature and search monitoring
 
@@ -120,13 +120,10 @@ are not reintroduced by a later review.
 
 ## Current factual blockers
 
-1. Confirm the month/year the Mercedes AMG High Performance Powertrains
-   placement finished, so the LinkedIn Experience entry can be closed. The
-   Experience entry still shows it as ongoing.
-3. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
-4. Confirm any additional personally controlled public profiles that should be
+1. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
+2. Confirm any additional personally controlled public profiles that should be
    connected through `sameAs`.
-5. Decide whether to create a Wikidata item for Rephobia Limited (see the
+3. Decide whether to create a Wikidata item for Rephobia Limited (see the
    decision log). This is the realistic route to a founder knowledge panel.
 
 GitHub's public profile README is complete. Updating the account-level bio and
