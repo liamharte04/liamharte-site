@@ -21,15 +21,40 @@ Preferred destinations:
 
 ## Priority and approval register
 
-| Priority | Publisher | Existing coverage | Contact route | Request | Status |
+**Re-prioritised 16 August 2026 on measured link behaviour, not on publisher
+prestige.** All fourteen press pages were fetched and their outbound links
+counted. The result:
+
+- **Zero of fourteen link to `liamharte.com`.**
+- **Four link to `rephobia.com`:** Silicon Republic, Belfast News Letter (the May
+  2025 Unity award piece), Start Your Business Magazine, and Unity.
+
+That single fact reorders everything. A publisher who has *already linked out
+once* has demonstrated its editorial policy permits it, so asking it to add a
+second link is a small ask. A publisher who has never linked has to change policy
+for you. The three proven linkers were **missing from this register entirely**,
+while the top slot went to a publisher that links nothing.
+
+Since rephobia.com now carries a sitewide footer link to liamharte.com, those
+four existing links already reach the personal site in one hop. Getting a direct
+link is still better, but the position is not zero.
+
+| Priority | Publisher | Already links out? | Contact route | Request | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Peter Jones Foundation | National Entrepreneur of the Year 2025 | `info@pjfoundation.org` or an existing programme contact | Add Liam's official personal-profile link to his name or biography. | Needs Liam approval |
-| 2 | Queen's University Belfast InQUBate | Rephobia case study | `InQUBate@qub.ac.uk` | Add Liam's official profile and verify current graduate/founder wording. | Needs Liam approval |
-| 3 | Unity | Rephobia founder feature | Existing Unity for Humanity contact or official contact route | Add Liam's official personal or founder-profile link. | Needs Liam approval |
-| 4 | Enterprise Ireland | 2026 Student Entrepreneur Awards | `press@enterprise-ireland.com` or the awards contact | Add an official Liam or Rephobia destination if editorial policy permits. | Needs Liam approval |
-| 5 | Simply Business | Young Entrepreneur Fund | `press@simplybusiness.co.uk` | Add an official profile link where Liam is named. | Needs Liam approval |
-| 6 | Ardonagh Community Trust | Bright Future Prize finalist | `info@ardonaghtrust.org` or an existing programme contact | Add an official profile link and retain accurate founder wording. | Needs Liam approval |
-| 7 | Belfast Telegraph | Existing Liam/Rephobia coverage | `newseditor@belfasttelegraph.co.uk` or `digital.editorial@belfasttelegraph.co.uk` | Pitch a substantive update only if there is a new milestone, pilot or award. | Needs Liam approval and a news hook |
+| 1 | Silicon Republic | **Yes** - links `rephobia.com` | Article byline (Colin Ryan) or general editorial | Add `liamharte.com` alongside the existing Rephobia link where Liam is named. | Needs Liam approval |
+| 2 | Belfast News Letter | **Yes** - links `rephobia.com` | Business desk (Claire Cartmill wrote both pieces) | Add `liamharte.com` where Liam is named; two articles, so ask once for both. | Needs Liam approval |
+| 3 | Start Your Business Magazine | **Yes** - links `rephobia.com` | Site contact form | Add `liamharte.com` alongside the existing link. Smallest publisher, likely fastest yes. | Needs Liam approval |
+| 4 | Queen's University Belfast InQUBate | No, but links his LinkedIn | `InQUBate@qub.ac.uk` | Add `liamharte.com` beside the LinkedIn link they already chose to include. | Needs Liam approval |
+| 5 | Unity | **Yes** - links `rephobia.com` | Existing Unity for Humanity contact | Add Liam's official founder link. Note this is his own guest post, so it is the least valuable as evidence of independence. | Needs Liam approval |
+| 6 | Peter Jones Foundation | No | `info@pjfoundation.org` or an existing programme contact | Add Liam's official personal-profile link to his name or biography. | Needs Liam approval |
+| 7 | Enterprise Ireland | No | `press@enterprise-ireland.com` or the awards contact | Add an official Liam or Rephobia destination if editorial policy permits. | Needs Liam approval |
+| 8 | Simply Business | No | `press@simplybusiness.co.uk` | Add an official profile link where Liam is named. | Needs Liam approval |
+| 9 | Ardonagh Community Trust | No | `info@ardonaghtrust.org` or an existing programme contact | Add an official profile link and retain accurate founder wording. | Needs Liam approval |
+| 10 | Belfast Telegraph | No | `newseditor@belfasttelegraph.co.uk` or `digital.editorial@belfasttelegraph.co.uk` | Pitch a substantive update only if there is a new milestone, pilot or award. | Needs Liam approval and a news hook |
+| - | BBC News | No | - | **Do not ask.** BBC does not add outbound promotional links on request and the ask damages the relationship for a future story. | Not a target |
+
+Drafts 1-3 for the proven linkers still need writing; the existing drafts below
+cover priorities 4 onward and are renumbered accordingly in their headings.
 
 Contact addresses should be rechecked on the publisher's official site
 immediately before sending. Use an existing named relationship contact when one
