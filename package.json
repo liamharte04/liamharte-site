@@ -4,6 +4,7 @@
   "private": true,
   "description": "Owned source and deployment configuration for liamharte.com",
   "scripts": {
+    "stamp": "node scripts/asset-stamps.mjs",
     "test": "node scripts/verify-site.mjs",
     "serve": "npx --yes serve site -l 4173"
   },

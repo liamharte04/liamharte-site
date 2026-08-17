@@ -1,23 +1,12 @@
-import { readFile, readdir, stat } from "node:fs/promises";
-import { dirname, join, relative, resolve } from "node:path";
+import { readFile, stat } from "node:fs/promises";
+import { join, relative, resolve } from "node:path";
+import { walkHtml } from "./walk-html.mjs";
+import { findStaleStamps } from "./asset-stamps.mjs";
 
 const root = resolve(import.meta.dirname, "..", "site");
 const failures = [];
 
-const walk = async (directory) => {
-  const entries = await readdir(directory);
-  const files = [];
-  for (const entry of entries) {
-    const path = join(directory, entry);
-    const info = await stat(path);
-    if (info.isDirectory()) files.push(...await walk(path));
-    else files.push(path);
-  }
-  return files;
-};
-
-const files = await walk(root);
-const htmlFiles = files.filter((file) => file.endsWith(".html"));
+const htmlFiles = await walkHtml(root);
 
 for (const file of htmlFiles) {
   const source = await readFile(file, "utf8");
@@ -83,6 +72,8 @@ for (const file of htmlFiles) {
   }
 }
 
+failures.push(...await findStaleStamps(htmlFiles));
+
 const sitemap = await readFile(join(root, "sitemap.xml"), "utf8");
 for (const url of ["https://liamharte.com/", "https://liamharte.com/about/", "https://liamharte.com/rephobia-founder/", "https://liamharte.com/recognition/", "https://liamharte.com/speaking/", "https://liamharte.com/privacy/", "https://liamharte.com/terms/"]) {
   if (!sitemap.includes(`<loc>${url}</loc>`)) failures.push(`sitemap.xml: missing ${url}`);
@@ -96,4 +87,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`Verified ${htmlFiles.length} HTML pages, internal targets, JSON-LD, sitemap and contact endpoint.`);
+console.log(`Verified ${htmlFiles.length} HTML pages, internal targets, asset versions, JSON-LD, sitemap and contact endpoint.`);

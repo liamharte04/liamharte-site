@@ -7,6 +7,15 @@
   --brown: #3b1f12;
   --brown-light: #6c4635;
   --green: #46654d;
+  /* Accents. These three were referenced throughout the sheet but never
+     defined, so every rule using them was invalid at computed-value time:
+     colours silently inherited and backgrounds fell back to transparent.
+     Values are drawn from tones already in use (--peach matches the
+     .section-label-light and .card-number accent) and --terracotta is
+     darkened from the #a16345 focus ring to clear 4.5:1 on --cream. */
+  --terracotta: #9a5a3c;
+  --peach: #d6bcae;
+  --cream: #fbf7f0;
   --line: rgba(32, 28, 25, 0.16);
   --shadow: 0 24px 70px rgba(57, 35, 24, 0.13);
   --serif: "Instrument Serif", Georgia, serif;
@@ -312,6 +321,7 @@ a {
 
 .hero-media img {
   width: 100%;
+  height: auto;
   aspect-ratio: 1.65;
   object-fit: cover;
   border-radius: 22px;
@@ -907,6 +917,12 @@ a {
 
 .service-card-light p {
   color: var(--ink-soft);
+}
+
+/* .card-number is coloured for the dark service cards; on the light variant
+   that peach lands at 1.7:1 and effectively disappears. */
+.service-card-light .card-number {
+  color: var(--terracotta);
 }
 
 .topic-list h3 {
