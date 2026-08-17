@@ -871,14 +871,25 @@ a {
   gap: 14px;
 }
 
+/* These lists were written for dark sections only and hardcoded their
+   paper-on-dark colours. The press list on /recognition/ sits in a light
+   section, where that resolved to paper text on a paper background:
+   contrast 1.00, the entire press corpus invisible. Light is now the
+   default and .section-dark opts in, so a future light placement is safe. */
 .source-list a,
 .topic-list article {
   display: grid;
   gap: 7px;
   padding: 22px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-  color: var(--paper);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
   text-decoration: none;
+}
+
+.section-dark .source-list a,
+.section-dark .topic-list article {
+  border-bottom-color: rgba(255, 255, 255, 0.18);
+  color: var(--paper);
 }
 
 .source-list a:first-child,
@@ -887,11 +898,31 @@ a {
 }
 
 .source-list span {
-  color: var(--peach);
+  color: var(--brown-light);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.11em;
   text-transform: uppercase;
+}
+
+.section-dark .source-list span {
+  color: var(--peach);
+}
+
+/* Publication dates. These are immutable facts about third-party articles,
+   so they never go stale and carry no obligation to keep publishing. */
+.source-list time,
+.entry-date {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
+.section-dark .source-list time {
+  color: rgba(255, 249, 242, 0.66);
+}
+
+.entry-date {
+  margin: 0 0 18px;
 }
 
 .source-list strong {
@@ -927,12 +958,15 @@ a {
 
 .topic-list h3 {
   margin: 0 0 6px;
-  color: var(--paper);
   font-size: 1.25rem;
 }
 
 .topic-list p {
   margin: 0;
+  color: var(--ink-soft);
+}
+
+.section-dark .topic-list p {
   color: rgba(255, 249, 242, 0.76);
 }
 
