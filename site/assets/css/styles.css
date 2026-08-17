@@ -778,6 +778,7 @@ a {
 
 .story-grid img {
   width: 100%;
+  height: auto;
   border-radius: 20px;
   box-shadow: var(--shadow);
 }
