@@ -41,7 +41,7 @@ link is still better, but the position is not zero.
 
 | Priority | Publisher | Already links out? | Contact route | Request | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Silicon Republic | **Yes** - links `rephobia.com` | Article byline (Colin Ryan) or general editorial | Add `liamharte.com` alongside the existing Rephobia link where Liam is named. | Needs Liam approval |
+| 1 | Silicon Republic | **Yes** - links `rephobia.com` | `cryan@siliconrepublic.com`, cc `rgraham@` - both on the original 2025 thread | **Pitch a new story, not a link edit.** Colin Ryan explicitly invited future announcements on 5 June 2025 and that invitation is unused. Ask for the name link only when supplying assets for a commissioned piece. | Needs Liam approval |
 | 2 | Belfast News Letter | **Yes** - links `rephobia.com` | Business desk (Claire Cartmill wrote both pieces) | Add `liamharte.com` where Liam is named; two articles, so ask once for both. | Needs Liam approval |
 | 3 | Start Your Business Magazine | **Yes** - links `rephobia.com` | **Charlotte Pettitt, `charlotte@beyond400.co.uk`** - the PR agency that placed the piece, not the magazine. Magazine publishes no email, form only. | Ask Charlotte to add `liamharte.com`, or to name the right editorial contact if she no longer represents them. | Needs Liam approval |
 | 4 | Queen's University Belfast InQUBate | No, but links his LinkedIn | `InQUBate@qub.ac.uk` | Add `liamharte.com` beside the LinkedIn link they already chose to include. | Needs Liam approval |
@@ -81,10 +81,13 @@ Rechecked against official publisher pages on 7 August 2026:
 
 Rechecked for the three new priority targets on 17 August 2026:
 
-- Silicon Republic's public contact page publishes named staff addresses,
-  including `cryan@siliconrepublic.com`. That matches Colin Ryan, the byline on
-  the Rephobia article, so it is a direct route to the author rather than a cold
-  inbox. `editorial@siliconrepublic.com` is listed as the general address.
+- Silicon Republic: `cryan@siliconrepublic.com` is confirmed from the 2025 mail
+  thread, not just their contact page. **Colin Ryan, Senior Reporter/Sub-editor,
+  +353 1 625 1471.** `rgraham@siliconrepublic.com` was cc'd on the original pitch
+  and should be cc'd again. The coverage came from Liam's own cold pitch to
+  `editorial@`, answered by Colin within twelve hours - there was no agency or
+  university intermediary, so this is a genuinely warm, direct relationship with
+  two friendly exchanges and an explicit standing invitation to pitch again.
 - Belfast News Letter publishes **no** author email. The article's own structured
   data returns `"email": null` for Claire Cartmill, and the contact page is a
   form. Use the form and name her; do not guess a `nationalworld.com` address.
@@ -122,32 +125,109 @@ the link because it removes an ambiguity, and mean it.
 
 ---
 
-## Draft: Silicon Republic (priority 1)
+## Draft: Silicon Republic (priority 1) - pitch a NEW story, do not ask for a link
 
-**Route:** `cryan@siliconrepublic.com` - Colin Ryan wrote the piece and his address
-is listed on their public contact page. Cc `editorial@siliconrepublic.com`.
+**The mail history changes this one completely.** Reviewed 17 August 2026.
 
-**Subject:** Small addition to your Rephobia piece
+**It was a cold pitch, and it worked in under twelve hours.** On 7 May 2025 at
+00:47 Liam emailed `editorial@siliconrepublic.com`, cc `rgraham@` and `cryan@`,
+subject *"Student's VR Startup Wins Share of $600K Global Unity Award"*. Colin
+Ryan replied at 11:50 the same morning offering the Start-up of the Week slot.
+No agency, no university intermediary. Liam placed it himself.
+
+**And Colin left the door explicitly open.** His closing email of 5 June 2025:
+
+> *"If you ever have any press releases or major announcements down the line,
+> don't hesitate to send them our way for consideration."*
+
+That invitation has been unused for fourteen months. In that time Rephobia has
+accumulated: **BBC News coverage** (8 March 2026), **Peter Jones Foundation
+National Entrepreneur of the Year** (3 December 2025), an **Enterprise Ireland
+Student Entrepreneur award** (June 2026) and an **Ardonagh Bright Future Prize**
+finalist place.
+
+So asking Colin to edit a fourteen-month-old article is the wrong ask. **A new
+Silicon Republic piece is worth far more than a link edit** - a fresh page, fresh
+coverage, and a natural place for a correctly attributed name link. He asked to
+be pitched. Pitch him.
+
+**Two stages. Do not merge them.**
+
+### Stage 1 - the news pitch. No link request at all.
+
+Mentioning the link here risks turning a strong story pitch into a favour
+request, which is a much easier no.
+
+**Route:** `cryan@siliconrepublic.com`, cc `rgraham@siliconrepublic.com` (both
+were on the original thread).
+
+**Subject:** Rephobia update - National Entrepreneur of the Year and a BBC feature
 
 > Hi Colin,
 >
-> Thanks again for covering Rephobia last June - the piece still sends people our
-> way.
+> Hope you're well. You very kindly said last June to send anything major your
+> way, so I'm taking you up on it.
 >
-> One small request. You link rephobia.com in the article, which is great. Would
-> you consider also linking my name to my own site, liamharte.com?
+> Since the Start-up of the Week feature, Rephobia has:
 >
-> The reason is slightly odd: there are two other reasonably well-known Liam
-> Hartes - a professor of Irish literature at Manchester and an oral surgeon in
-> Cork - so readers who search my name after reading the piece often end up on
-> the wrong person. A link from my name solves that in one step.
+> - been named Peter Jones Foundation National Entrepreneur of the Year 2025
+> - been covered by BBC News on the acrophobia VR trial
+> - won a Grant Thornton High Achieving Merit Award at Enterprise Ireland's 2026
+>   Student Entrepreneur Awards
+> - reached the Ardonagh Bright Future Prize finals
 >
-> Completely understand if it is not something you do. Either way, if Rephobia
-> reaches a milestone worth a follow-up I will come to you first.
+> The angle I think is genuinely interesting: the dorm-room project you covered
+> has gone from a prototype to a clinically framed trial with national coverage,
+> in a little over a year - and it's still Northern Ireland based.
 >
-> Best,
+> Happy to do another Q&A, supply fresh images, or just answer questions if
+> there's a story in it. Equally happy to hear it's not one for you.
+>
+> Thanks either way,
 > Liam Harte
 > Founder, Rephobia
+
+### Stage 2 - only if he commissions something.
+
+When he asks for the Q&A and images, that is the natural moment. Add one line to
+the email supplying the assets:
+
+> One small thing - would you be able to link my name to liamharte.com in the
+> piece? There are two other reasonably well-known Liam Hartes, a Manchester
+> literature professor and an oral surgeon in Cork, so readers who search me tend
+> to land on the wrong person.
+
+Asked at the point of supplying materials, this costs nothing and is almost
+always accommodated. Asked cold, it is a favour.
+
+**If he declines a new story**, then and only then send the short link-edit
+request about the June 2025 article, using the wording in Stage 2.
+
+---
+
+## What made the May 2025 pitch work
+
+Worth keeping, because press is the actual lever on the bare-name query and Liam
+has already proven he can land it cold. The structure of the email that got a
+reply in eleven hours:
+
+1. **Subject led with a number and a stake** - "Wins Share of $600K Global Unity
+   Award". Not "Rephobia press enquiry".
+2. **First line established who and what** - name, age, institution, the news.
+3. **A scarcity hook** - "one of only two student-led teams".
+4. **Personal stake, briefly** - the OCD experience, one sentence, not a memoir.
+5. **Third-party validation quoted** - what Unity said, so the reporter did not
+   have to take his word for it.
+6. **A regional angle aimed at that outlet** - "a dorm-room idea from Northern
+   Ireland" and "tech-for-good startups across the island". Silicon Republic is
+   Irish; the pitch was written for them specifically.
+7. **A primary source link** - Unity's official announcement, so it was
+   verifiable in one click.
+8. **Assets offered up front** - headshots attached, plus quote, press summary or
+   interview on request.
+
+Reuse this shape for any future outlet. It is a better template than anything in
+this document.
 
 ---
 
