@@ -53,8 +53,9 @@ link is still better, but the position is not zero.
 | 10 | Belfast Telegraph | No | `newseditor@belfasttelegraph.co.uk` or `digital.editorial@belfasttelegraph.co.uk` | Pitch a substantive update only if there is a new milestone, pilot or award. | Needs Liam approval and a news hook |
 | - | BBC News | No | - | **Do not ask.** BBC does not add outbound promotional links on request and the ask damages the relationship for a future story. | Not a target |
 
-Drafts 1-3 for the proven linkers still need writing; the existing drafts below
-cover priorities 4 onward and are renumbered accordingly in their headings.
+Drafts for all ten targets are written below. Headings carry the priority number
+rather than a sequence, so re-ordering the register does not silently invalidate
+them.
 
 Contact addresses should be rechecked on the publisher's official site
 immediately before sending. Use an existing named relationship contact when one
@@ -78,6 +79,18 @@ Rechecked against official publisher pages on 7 August 2026:
   existing grant relationship contact remains the correct route and should not
   be replaced with an unrelated support or privacy address.
 
+Rechecked for the three new priority targets on 17 August 2026:
+
+- Silicon Republic's public contact page publishes named staff addresses,
+  including `cryan@siliconrepublic.com`. That matches Colin Ryan, the byline on
+  the Rephobia article, so it is a direct route to the author rather than a cold
+  inbox. `editorial@siliconrepublic.com` is listed as the general address.
+- Belfast News Letter publishes **no** author email. The article's own structured
+  data returns `"email": null` for Claire Cartmill, and the contact page is a
+  form. Use the form and name her; do not guess a `nationalworld.com` address.
+- Start Your Business Magazine publishes no email either - its contact page is a
+  Contact Form 7 web form.
+
 Official verification pages:
 
 - `https://www.peterjonesfoundation.org/contact`
@@ -88,7 +101,115 @@ Official verification pages:
 - `https://www.ardonaghtrust.org/our-news/bright-future-prize-2026-launches-today`
 - `https://www.belfasttelegraph.co.uk/contact-us`
 
-## Draft 1: Peter Jones Foundation
+## The framing that makes these work
+
+Every draft below leads with **disambiguation, not promotion**. That is deliberate.
+
+Editors receive link requests constantly and most read as SEO favours, which is
+an easy no. But "there are three notable Liam Hartes and your readers who search
+my name land on a Manchester literature professor or a Cork oral surgeon" is a
+genuine accuracy problem in *their* article, and fixing it serves their reader.
+It also happens to be completely true.
+
+So: never write "backlink", "SEO", "domain authority", or "link juice". Ask for
+the link because it removes an ambiguity, and mean it.
+
+---
+
+## Draft: Silicon Republic (priority 1)
+
+**Route:** `cryan@siliconrepublic.com` - Colin Ryan wrote the piece and his address
+is listed on their public contact page. Cc `editorial@siliconrepublic.com`.
+
+**Subject:** Small addition to your Rephobia piece
+
+> Hi Colin,
+>
+> Thanks again for covering Rephobia last June - the piece still sends people our
+> way.
+>
+> One small request. You link rephobia.com in the article, which is great. Would
+> you consider also linking my name to my own site, liamharte.com?
+>
+> The reason is slightly odd: there are two other reasonably well-known Liam
+> Hartes - a professor of Irish literature at Manchester and an oral surgeon in
+> Cork - so readers who search my name after reading the piece often end up on
+> the wrong person. A link from my name solves that in one step.
+>
+> Completely understand if it is not something you do. Either way, if Rephobia
+> reaches a milestone worth a follow-up I will come to you first.
+>
+> Best,
+> Liam Harte
+> Founder, Rephobia
+
+---
+
+## Draft: Belfast News Letter (priority 2)
+
+**Route:** contact form at `newsletter.co.uk/contact-us`, addressed to the business
+desk and referencing Claire Cartmill by name. Her email is not published - the
+article's structured data explicitly returns `null` for it, so do not guess an
+address.
+
+**One ask, two articles.** Claire wrote both the May 2025 Unity award piece and
+the November 2025 UK award piece. Ask about both together; it is the same effort
+for her and twice the result.
+
+**Subject:** Claire Cartmill - small link addition to two Rephobia articles
+
+> Hello,
+>
+> Could this reach Claire Cartmill on the business desk?
+>
+> Claire, you covered Rephobia twice last year - the Unity award in May and the
+> UK award in November. Thank you for both.
+>
+> A small request for each. The May piece links rephobia.com; would you consider
+> also linking my name to liamharte.com in both articles?
+>
+> The reason: there are two other well-known Liam Hartes, a Manchester literature
+> professor and a Cork oral surgeon, so readers searching my name after your
+> pieces frequently land on the wrong one. A link from my name fixes it.
+>
+> No problem at all if that is not something the desk does.
+>
+> Best,
+> Liam Harte
+> Founder, Rephobia (Belfast)
+
+---
+
+## Draft: Start Your Business Magazine (priority 3)
+
+**Route:** contact form at `startyourbusinessmagazine.com/contact/` (Contact Form
+7; no published email address).
+
+**Likely the fastest yes** - smallest publisher of the three, and they already
+link rephobia.com.
+
+**Subject:** Small link addition to the Rephobia feature
+
+> Hello,
+>
+> Thanks for featuring Rephobia last November.
+>
+> You link rephobia.com in the piece. Would you also be able to link my name to
+> liamharte.com?
+>
+> There are two other fairly prominent Liam Hartes - an academic and a surgeon -
+> so readers who search my name after reading the article often find the wrong
+> person. A link from my name in the piece sorts it out.
+>
+> Thanks either way.
+>
+> Best,
+> Liam Harte
+> Founder, Rephobia
+
+---
+
+## Draft: Peter Jones Foundation (priority 6)
 
 **Subject:** Small link update for Liam Harte's winner profile
 
@@ -111,7 +232,7 @@ Liam Harte<br>
 Founder, Rephobia<br>
 https://liamharte.com/
 
-## Draft 2: Queen's University Belfast InQUBate
+## Draft: Queen's University Belfast InQUBate (priority 4)
 
 **Subject:** Rephobia case study profile link and factual check
 
@@ -135,7 +256,7 @@ Liam Harte<br>
 Founder, Rephobia<br>
 https://liamharte.com/
 
-## Draft 3: Unity
+## Draft: Unity (priority 5)
 
 **Subject:** Official founder link for the Rephobia feature
 
@@ -156,7 +277,7 @@ Thank you,
 
 Liam Harte
 
-## Draft 4: Enterprise Ireland
+## Draft: Enterprise Ireland (priority 7)
 
 **Subject:** Official link for Liam Harte in the 2026 Student Entrepreneur Awards article
 
@@ -179,7 +300,7 @@ Kind regards,
 Liam Harte<br>
 Founder, Rephobia
 
-## Draft 5: Simply Business
+## Draft: Simply Business (priority 8)
 
 **Subject:** Official profile link for Liam Harte's Young Entrepreneur Fund entry
 
@@ -197,7 +318,7 @@ Many thanks,
 
 Liam Harte
 
-## Draft 6: Ardonagh Community Trust
+## Draft: Ardonagh Community Trust (priority 9)
 
 **Subject:** Official profile link for Bright Future Prize finalist Liam Harte
 
@@ -216,7 +337,7 @@ Kind regards,
 
 Liam Harte
 
-## Draft 7: Belfast Telegraph follow-up pitch
+## Draft: Belfast Telegraph follow-up pitch (priority 10)
 
 Send this only when there is a concrete new event such as a completed pilot,
 published result, major award, investment, clinic partnership or regulatory
