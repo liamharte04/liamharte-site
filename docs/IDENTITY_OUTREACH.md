@@ -43,7 +43,7 @@ link is still better, but the position is not zero.
 | --- | --- | --- | --- | --- | --- |
 | 1 | Silicon Republic | **Yes** - links `rephobia.com` | Article byline (Colin Ryan) or general editorial | Add `liamharte.com` alongside the existing Rephobia link where Liam is named. | Needs Liam approval |
 | 2 | Belfast News Letter | **Yes** - links `rephobia.com` | Business desk (Claire Cartmill wrote both pieces) | Add `liamharte.com` where Liam is named; two articles, so ask once for both. | Needs Liam approval |
-| 3 | Start Your Business Magazine | **Yes** - links `rephobia.com` | Site contact form | Add `liamharte.com` alongside the existing link. Smallest publisher, likely fastest yes. | Needs Liam approval |
+| 3 | Start Your Business Magazine | **Yes** - links `rephobia.com` | **Charlotte Pettitt, `charlotte@beyond400.co.uk`** - the PR agency that placed the piece, not the magazine. Magazine publishes no email, form only. | Ask Charlotte to add `liamharte.com`, or to name the right editorial contact if she no longer represents them. | Needs Liam approval |
 | 4 | Queen's University Belfast InQUBate | No, but links his LinkedIn | `InQUBate@qub.ac.uk` | Add `liamharte.com` beside the LinkedIn link they already chose to include. | Needs Liam approval |
 | 5 | Unity | **Yes** - links `rephobia.com` | Existing Unity for Humanity contact | Add Liam's official founder link. Note this is his own guest post, so it is the least valuable as evidence of independence. | Needs Liam approval |
 | 6 | Peter Jones Foundation | No | `info@pjfoundation.org` or an existing programme contact | Add Liam's official personal-profile link to his name or biography. | Needs Liam approval |
@@ -89,7 +89,13 @@ Rechecked for the three new priority targets on 17 August 2026:
   data returns `"email": null` for Claire Cartmill, and the contact page is a
   form. Use the form and name her; do not guess a `nationalworld.com` address.
 - Start Your Business Magazine publishes no email either - its contact page is a
-  Contact Form 7 web form.
+  Contact Form 7 web form. **However, the feature was placed by a PR agency, not
+  won by direct pitch.** `charlotte@beyond400.co.uk` sent the interview questions
+  on 15 October 2025, collected the answers, and placed it; beyond400.co.uk's own
+  title tag reads "Beyond 400 | PR Agency". She is the warm route and holds the
+  editorial contact. Her engagement appears tied to the Ignite campaign and last
+  contact was 17 November 2025, so the approach must not assume she still
+  represents them.
 
 Official verification pages:
 
@@ -182,30 +188,61 @@ for her and twice the result.
 
 ## Draft: Start Your Business Magazine (priority 3)
 
-**Route:** contact form at `startyourbusinessmagazine.com/contact/` (Contact Form
-7; no published email address).
+**Route: go via Charlotte Pettitt, not the magazine's contact form.**
 
-**Likely the fastest yes** - smallest publisher of the three, and they already
-link rephobia.com.
+The feature did not come from direct editorial contact. Checking the mail
+history: `charlotte@beyond400.co.uk` emailed the ten interview questions on
+15 October 2025 - *"Please find below the questions about Rephobia from Start
+Your Business, please return answers to me by midday tomorrow"* - collected the
+answers and images, and placed the piece. Beyond 400's own site title reads
+**"Beyond 400 | PR Agency"**, so she is an agency contact, not magazine staff.
+The context was PR support around the Ignite final. Last contact was
+17 November 2025.
 
-**Subject:** Small link addition to the Rephobia feature
+Two consequences:
 
-> Hello,
+1. **She has the editorial relationship you don't.** The magazine publishes no
+   email address at all, only a Contact Form 7 form. Charlotte can either make
+   the change happen or hand you the name of whoever can.
+2. **Her engagement was probably time-boxed to that campaign**, roughly nine
+   months ago. Do not assume she still represents them - ask, and give her an
+   easy out.
+
+So the email carries **two asks**, and succeeds if either lands: the link, or the
+contact. Lead with the progress update, because BBC coverage and National
+Entrepreneur of the Year are genuinely good news to a PR who worked on the
+account, and it makes the message something other than a favour request.
+
+**Subject:** Rephobia update - and a small favour if you're still in touch with Start Your Business
+
+> Hi Charlotte,
 >
-> Thanks for featuring Rephobia last November.
+> Hope you're well. It's been a while since the Ignite push - thank you again for
+> getting Rephobia in front of Start Your Business, the piece has been genuinely
+> useful.
 >
-> You link rephobia.com in the piece. Would you also be able to link my name to
-> liamharte.com?
+> A quick update, since you worked on the story: we've since had BBC News
+> coverage, and I was named the Peter Jones Foundation's National Entrepreneur of
+> the Year.
 >
-> There are two other fairly prominent Liam Hartes - an academic and a surgeon -
-> so readers who search my name after reading the article often find the wrong
-> person. A link from my name in the piece sorts it out.
+> The small favour. In the Start Your Business piece, rephobia.com is linked but
+> my name isn't. Would you be able to ask them to link my name to liamharte.com?
+> There are two other reasonably well-known Liam Hartes - a Manchester literature
+> professor and an oral surgeon in Cork - so people who search me after reading
+> the article tend to land on the wrong person.
 >
-> Thanks either way.
+> And if you're no longer working with them, no problem at all - could you point
+> me at the right person to ask instead? They don't publish an email address.
+>
+> Thanks either way, and good to be back in touch.
 >
 > Best,
 > Liam Harte
 > Founder, Rephobia
+
+**Fallback only if Charlotte does not reply within ~10 days:** the Contact Form 7
+form at `startyourbusinessmagazine.com/contact/`, using the shorter direct
+wording from the Silicon Republic draft.
 
 ---
 
