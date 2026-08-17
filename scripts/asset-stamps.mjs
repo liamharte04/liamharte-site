@@ -18,9 +18,13 @@ const STAMPED_ASSETS = ["/assets/css/styles.css", "/assets/js/main.js"];
 
 const REFERENCE = /(?:href|src)="(\/assets\/(?:css|js)\/[^"?]+)(?:\?v=[^"]*)?"/g;
 
+// Hashes the normalised text, not the raw bytes. core.autocrlf is true on
+// Liam's Windows checkout, so the working tree holds CRLF while the committed
+// blob and the Linux CI runner hold LF. Hashing raw bytes makes a locally
+// written stamp fail in CI every single time.
 export const assetVersion = async (urlPath) => {
-  const bytes = await readFile(join(root, urlPath));
-  return createHash("sha256").update(bytes).digest("hex").slice(0, 10);
+  const source = await readFile(join(root, urlPath), "utf8");
+  return createHash("sha256").update(source.replaceAll("\r\n", "\n")).digest("hex").slice(0, 10);
 };
 
 export const assetVersions = async () => {
