@@ -6,6 +6,59 @@
 under Liam's own account with the conflict-of-interest disclosure published at
 [Talk:Q141104375](https://www.wikidata.org/wiki/Talk:Q141104375).
 
+## Stage 2 is also done (17 August 2026)
+
+Both items now exist and are linked:
+
+| Item | What it is |
+| --- | --- |
+| [Q141104375](https://www.wikidata.org/wiki/Q141104375) | Rephobia Limited - 8 statements, **all 8 referenced** |
+| [Q141155574](https://www.wikidata.org/wiki/Q141155574) | Liam Harte - 5 statements, COI disclosed on the talk page |
+
+The link runs both ways: `P112` (founder) on the company points at the person,
+and the person carries `P1889` (different from) pointing at **Q57416185**, the
+Manchester professor of Irish literature. That single statement is the point of
+the whole exercise - it tells Wikidata explicitly that the two are not the same
+person.
+
+**Person item statements:** `P31`=Q5 (human), `P1889`=Q57416185 (different from),
+`P106`=Q131524 (entrepreneur, sourced to Silicon Republic), `P69`=Q877925
+(educated at QUB, sourced to BBC News), `P856`=https://liamharte.com/. Alias
+`Liam Padraic Harte` from the public Companies House officer record, which is
+itself a disambiguator since the professor is not "Liam Padraic".
+
+Three statements are intentionally unreferenced: `P31` (human), `P1889` (different
+from) and `P856` (official website). These are self-evident or structural and are
+conventionally left unsourced on Wikidata; referencing them would be noise rather
+than rigour.
+
+**Why the 3-4 week wait was dropped.** That figure came from an external review
+and was repeated here with more authority than it deserved - it is not Wikidata
+policy. Checking [WD:N](https://www.wikidata.org/wiki/Wikidata:Notability)
+directly, the person item qualifies on two independent grounds:
+
+- **Criterion 3, structural need:** it is required as the value of `P112` on
+  Q141104375. Wikidata holds millions of items created for exactly this reason.
+- **Criterion 2, identifiable entity with serious published references:** BBC,
+  Silicon Republic, Belfast Telegraph, Belfast News Letter, Companies House.
+
+Neither improves with elapsed time. The only thing waiting bought was evidence
+the company item would not be challenged, and six days with zero deletion
+nominations, nothing added to the talk page, and a maintenance bot
+(`Mr.Ibrahembot`) quietly adding an Arabic description was reasonable evidence of
+that. The bot edit is a positive signal: normal Wikidata infrastructure picked
+the item up and treated it as legitimate.
+
+**A third autocomplete decoy, for the record.** Searching `entrepreneur` returns
+a **1997 video game** (`Q30598698`) as its second hit; the occupation concept is
+`Q131524`. Along with the SAGE journal for "digital health" and Belfast in Waldo
+County Maine, that is three near-misses avoided purely by verifying QIDs against
+the API rather than trusting the dropdown.
+
+**Also added to the site schema:** `https://www.wikidata.org/entity/Q141155574` now
+appears in the Person `sameAs` on all five identity pages, so liamharte.com and
+the Wikidata item point at each other.
+
 ## What was actually created
 
 Seven statements, each value verified against the API after publishing rather
@@ -44,9 +97,10 @@ Rephobia is registered in Northern Ireland. An imprecise claim on a new
 conflict-of-interest item is worth less than no claim. This is explained on the
 talk page.
 
-**Stage 1 is complete.** Nothing further is needed on the company item before
-Stage 2. If you want to strengthen it later, the natural additions are `P813`
-(retrieved) qualifiers on the Companies House references, and a second
+**Stage 1 is complete**, and `P112` (founder → Q141155574) was added in Stage 2,
+sourced to Silicon Republic, bringing the company item to 8 statements with all 8
+referenced. If you want to strengthen it further, the natural additions are
+`P813` (retrieved) qualifiers on the Companies House references and a second
 independent reference on `P452`.
 
 ## Why the company and not the person
@@ -58,8 +112,13 @@ German National Library (`P227`), IdRef (`P269`), the Dutch national library
 (`P1006`) and the National Library of Israel (`P8189`), plus date of birth and
 employer. Those exist because he publishes books and libraries catalogue them.
 
-A self-created personal item cannot out-anchor that, and would likely be
-nominated for deletion as promotional. A deletion log is worse than no item.
+A self-created personal item cannot out-anchor that, so the personal item does
+not try to - it is deliberately minimal and enters the graph via `P112`.
+
+**Correction (17 August 2026):** the original text here said such an item "would
+likely be nominated for deletion as promotional". That overstated the risk. It
+describes Wikipedia, not Wikidata, whose bar is far lower - see the WD:N
+criteria quoted above. The item was created on 17 August and stands.
 
 Rephobia Limited is a different case: a registered company with a definite public
 record and substantial independent coverage. It clears Wikidata's notability bar
@@ -82,15 +141,20 @@ Put this in the edit summary on creation, and on the item's talk page:
 
 ## Staged plan - do NOT do it all at once
 
-**Stage 1 (now):** create the Rephobia Limited item with the statements below,
-**omitting `P112` founder**. Let it stand on the company's own merits.
+**Both stages are now complete** - see the section at the top of this file. The
+original plan is preserved below for the record.
 
-**Stage 2 (after roughly 3-4 weeks, if Stage 1 is unchallenged):** create a
-minimal `Liam Harte` person item and add `P112` on Rephobia pointing to it, plus
-`P1889` (different from) → `Q57416185` to explicitly separate the two.
+> **Stage 1 (now):** create the Rephobia Limited item, **omitting `P112`
+> founder**. Let it stand on the company's own merits.
+>
+> **Stage 2 (after roughly 3-4 weeks, if Stage 1 is unchallenged):** create a
+> minimal `Liam Harte` person item and add `P112` on Rephobia pointing to it,
+> plus `P1889` (different from) → `Q57416185`.
 
-Doing both at once makes the whole thing look like a personal promotion vehicle
-and puts the strong company item at risk alongside the weak personal one.
+Stage 1 ran on 16 August and Stage 2 on 17 August, six days apart rather than
+three to four weeks. The reasoning for shortening it is at the top. In short: the
+wait was never policy, and the person item is defensible on structural need
+regardless of how long the company item has existed.
 
 ## Stage 1 - item statements
 

@@ -70,6 +70,7 @@ profiles and independent sources consistently identify the same person.
 | C03 | Critical | Preserve and cite Queen's University Belfast coverage | Complete | InQUBate profile and School of EEECS news identified. |
 | C04 | Critical | Preserve and cite Enterprise Ireland recognition | Complete | Official 2026 High Achieving Merit Award article identified. |
 | C05 | High | Add Belfast Telegraph, Simply Business and ACT evidence | Complete | All three are linked from `/recognition/`; award facts are limited to the source record. |
+| B21 | High | Establish Wikidata entities for the company and the person | Complete | [Q141104375](https://www.wikidata.org/wiki/Q141104375) Rephobia Limited (8 statements, all referenced) created 16 August 2026, and [Q141155574](https://www.wikidata.org/wiki/Q141155574) Liam Harte created 17 August. Linked by `P112` (founder), with `P1889` (different from) → `Q57416185` explicitly separating Liam from the Manchester professor of Irish literature. COI disclosed on both talk pages. Both Wikidata URIs are in the site's Person `sameAs`. See `WIKIDATA_REPHOBIA_DRAFT.md`. |
 | C11 | Critical | Cite the BBC News coverage | Complete | `bbc.co.uk/news/articles/clyg9ew3q00o` (8 March 2026) was absent from the entire site and every schema node. It is now first in `subjectOf` and first in the `/recognition/` `ItemList`. This was the single largest gap in the entity graph. |
 | C12 | High | Cite the remaining verified press corpus | Complete | Silicon Republic, two Belfast News Letter articles, We Are Tyrone, ESBF and Start Your Business Magazine added. All verified HTTP 200 except Belfast Telegraph, which returns 403 to non-browser agents but is live and paywalled. |
 | C06 | High | Ask key publishers to link to `liamharte.com` | Needs Liam | Seven targeted drafts, contacts and a send protocol are prepared in `IDENTITY_OUTREACH.md`; Liam must approve actual sending. |
@@ -115,16 +116,19 @@ are not reintroduced by a later review.
 | Create an ORCID iD and add it to `sameAs` | Declined | Duplicates D07. ORCID is an academic-author identifier. Adopting one moves this entity *towards* the Manchester professor of Irish Literature rather than away, which is the opposite of the objective. |
 | Add `address` / `homeLocation` of Belfast | ~~Declined~~ **Now implemented** | Declined on 10 August because Liam was not in Belfast. He confirmed on 16 August that he now lives there, so the claim became accurate and was implemented as B20. Place-specificity is an asset here rather than a constraint: the objective is disambiguating a personal name, not ranking for a generic national term, and Belfast separates this entity from Manchester and Cork. |
 | Add `birthDate` | Declined | Publishes a personal data point that is not required for disambiguation and is not currently public on any first-party property. The Companies House record (B18) already provides government-grade corroboration without it. |
-| Create a Wikidata item for Liam personally | Deferred | The competing academic entity `Q57416185` is anchored by ORCID, VIAF, ISNI, LCCN, BnF and NKC authority records. A self-created item is unlikely to survive notability review and a deletion log is worse than no item. Reconsider only after a Rephobia Limited item is established, then attach via `founder` (P112). |
-| Wikidata item for Rephobia Limited | Needs Liam | Notability case is materially stronger than the personal one (BBC, Unity, Belfast Telegraph, Silicon Republic, QUB, company number). Requires Liam's decision before creating anything on an external platform. |
+| Create a Wikidata item for Liam personally | **Done 17 August 2026** - see B21 | The competing academic entity `Q57416185` is anchored by ORCID, VIAF, ISNI, LCCN, BnF and NKC authority records. A self-created item is unlikely to survive notability review and a deletion log is worse than no item. Reconsider only after a Rephobia Limited item is established, then attach via `founder` (P112). |
+| Wikidata item for Rephobia Limited | **Done 16 August 2026** - see B21 | Notability case is materially stronger than the personal one (BBC, Unity, Belfast Telegraph, Silicon Republic, QUB, company number). Requires Liam's decision before creating anything on an external platform. |
 
 ## Current factual blockers
 
 1. Approve which messages in `IDENTITY_OUTREACH.md` may actually be sent.
 2. Confirm any additional personally controlled public profiles that should be
    connected through `sameAs`.
-3. Decide whether to create a Wikidata item for Rephobia Limited (see the
-   decision log). This is the realistic route to a founder knowledge panel.
+3. Monitor the two Wikidata items (B21) for challenges. A scheduled reminder
+   fires on 21 September 2026. It cannot verify them automatically -
+   wikidata.org is blocked by the cloud environment's egress proxy - so the
+   check is a two-minute manual one against the baseline recorded in
+   `WIKIDATA_REPHOBIA_DRAFT.md`.
 
 GitHub's public profile README is complete. Updating the account-level bio and
 website fields through the CLI additionally requires GitHub's `user` OAuth
